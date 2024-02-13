@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Submission } from './leetcode.submissionModel.component';
+import { TimeAgoService } from '../serviceComponents/time-ago.service';
 
 @Component({
   selector: 'app-leetcode',
@@ -8,8 +10,8 @@ import { HttpClient } from '@angular/common/http';
 })
 
 export class LeetcodeComponent implements OnInit {
-  result: any = '';
-  loading: boolean = true;
+  results: Submission[] = [];
+  loadingState: boolean = true;
 
   constructor(private http: HttpClient) { }
 
@@ -21,17 +23,19 @@ export class LeetcodeComponent implements OnInit {
     this.http.get<any>('http://localhost:3000/leetcode')
       .subscribe(
         data => {
-          // Handle successful response
-          console.log('Received data:', data);
-          this.result = data;
-        },
+          this.results = data.map((item: { title: string; titleSlug: string; timestamp: number; statusDisplay: string; lang: string; formattedDate: string; }) => ({
+            title: item.title,
+            titleSlug: item.titleSlug,
+            timestamp: TimeAgoService.calculateTimeAgoMili(item.timestamp),
+            statusDisplay: item.statusDisplay,
+            language: item.lang,
+            Date: item.formattedDate,
+        }))},
         error => {
-          // Handle error
           console.error('Error:', error);
         },
         () => {
-          // Finalize request (complete or error)
-          this.loading = false;
+          this.loadingState = false;
         }
       );
   }
