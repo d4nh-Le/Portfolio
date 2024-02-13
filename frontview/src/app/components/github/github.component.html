@@ -1,0 +1,18 @@
+<p>github works!</p>
+<p>Test results:</p>
+
+<div *ngIf="loadingState">Loading leetcode info...</div>
+
+<div *ngIf="(!results && !loadingState)">
+  Error fetching data.
+</div>
+
+<div *ngIf="(results)">
+  <div *ngFor="let result of results">
+    <p>Repository: {{ result.repository.owner }} / {{ result.repository.name }}</p>
+    <p>Message: {{ result.commitMessage }}</p>
+    <p>Date: {{ result.commitDate | date }}, ({{result.commitAgo}}),</p>
+    <hr>
+  </div>
+</div>
+

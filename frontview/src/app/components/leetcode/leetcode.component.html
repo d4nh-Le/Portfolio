@@ -1,0 +1,13 @@
+<p>leetcode works!</p>
+<p>Test results:</p>
+
+<div *ngIf="loading">Loading...</div>
+
+<div *ngIf="(!result && !loading)">
+  Error fetching data.
+</div>
+
+<div *ngIf="(result)">
+  {{ result | json }}
+</div>
+
