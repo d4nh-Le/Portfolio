@@ -1,0 +1,6 @@
+.info-icon {
+    font-size: 30px;
+    color: #3c4652; /* Blue color */
+    margin: 10px;
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
