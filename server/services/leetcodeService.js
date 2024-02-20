@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 const query = `
   query getUserProfile($username: String!) {
     recentSubmissionList(username: $username) {

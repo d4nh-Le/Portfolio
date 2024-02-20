@@ -1,4 +1,3 @@
-
 const express = require('express');
 const app = express();
 const cors = require('cors');
@@ -9,11 +8,13 @@ require('dotenv').config();
 
 const leetcode = require('./services/leetcodeService');
 const github = require('./services/githubService.js');
+const projects = require('./services/projectsService.js');
 
 app.use(cors());
 
 app.get('/leetcode', leetcode.leetcodeGetInfo);
 app.get('/github', github.githubGetInfo);
+app.get('/projects', projects.projectsGetDetails);
 
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
