@@ -9,6 +9,7 @@ import { InfoComponent } from './components/info/info.component';
 import { ConnectionsComponent } from './components/connections/connections.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
     InfoComponent,
     ConnectionsComponent,
     ProjectsComponent,
+    SkillsComponent,
   ],
   imports: [
     BrowserModule,
