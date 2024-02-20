@@ -50,7 +50,7 @@ async function leetcodeGetInfo() {
     }
 }
 
-function filterAcceptedTries(data) {
+async function filterAcceptedTries(data) {
   if (!data || !data.data || !data.data.recentSubmissionList || !Array.isArray(data.data.recentSubmissionList)) {
       console.error("Invalid data format.");
       return [];
@@ -72,7 +72,7 @@ function filterAcceptedTries(data) {
 exports.leetcodeGetInfo = async (req, res) => { 
   try {
       const jsonData = await leetcodeGetInfo();
-      const filteredData = filterAcceptedTries(jsonData);
+      const filteredData = await filterAcceptedTries(jsonData);
       console.log('Leetcode User Data:', filteredData);
       res.json(filteredData);
   } catch (error) {

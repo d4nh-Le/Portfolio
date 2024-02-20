@@ -59,7 +59,7 @@ async function fetchGitHubData() {
   }
 }
 
-function filterCommits(jsonData) {
+async function filterCommits(jsonData) {
   if (!jsonData || !jsonData.data || !jsonData.data.user) {
       console.error("Invalid JSON data format.");
       return [];
@@ -98,7 +98,7 @@ function filterCommits(jsonData) {
 exports.githubGetInfo = async (req, res) => { 
   try {
       const jsonData = await fetchGitHubData();
-      const filteredData = filterCommits(jsonData);
+      const filteredData = await filterCommits(jsonData);
 
       console.log('GitHub User Data:', filteredData);
       res.json(filteredData);
