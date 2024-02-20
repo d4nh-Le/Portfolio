@@ -1,6 +1,6 @@
-.connections-icon {
-    font-size: 30px;
-    color: #3c4652; /* Blue color */
-    margin: 10px;
-    transition: color 0.3s ease-in-out; /* Smooth color transition */
+img {
+  width: 20px; /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+  border-radius: 20%; /* Make it a circle */
+  object-fit: cover; /* Maintain aspect ratio */
 }
