@@ -2,44 +2,64 @@
   {
     "projectTitle": "Project Test #1",
     "projectAuthors": "John Smith",
+    "technologies" : [
+      "React",
+      "NodeJS",
+      "DynamoDB"
+    ],
     "projectDescription": "This wonderfull application is used to track expenses of the business. It also has a miracle to give the client a special buff to fly!",
     "projectDate": "June 9, 2069",
     "projectImages": [
-      "./projectImages/project_1_1.jpg",
-      "./projectImages/project_1_2.jpg"
+      "../../../assets/projectImages/project_1_1.jpg",
+      "../../../assets/projectImages/project_1_2.jpg"
     ]
   },
   {
     "projectTitle": "Project XYZ",
     "projectAuthors": "Jane Doe",
+    "technologies" : [
+      "Angular",
+      "NodeJS",
+      "MongoDB"
+    ],
     "projectDescription": "A cutting-edge application for managing tasks and scheduling appointments.",
     "projectDate": "October 15, 2075",
     "projectImages": [
-      "./projectImages/project_xyz_1.jpg",
-      "./projectImages/project_xyz_2.jpg",
-      "./projectImages/project_xyz_3.jpg"
+      "../../../assets/projectImages/project_xyz_1.jpg",
+      "../../../assets/projectImages/project_xyz_2.jpg",
+      "../../../assets/projectImages/project_xyz_3.jpg"
     ]
   },
   {
     "projectTitle": "Awesome App",
     "projectAuthors": "Alan Johnson",
+    "technologies" : [
+      "React",
+      "NodeJS",
+      "DynamoDB"
+    ],
     "projectDescription": "An innovative mobile app that helps users find the best restaurants nearby.",
     "projectDate": "May 3, 2080",
     "projectImages": [
-      "./projectImages/awesome_app_1.jpg",
-      "./projectImages/awesome_app_2.jpg"
+      "../../../assets/projectImages/awesome_app_1.jpg",
+      "../../../assets/projectImages/awesome_app_2.jpg"
     ]
   },
   {
     "projectTitle": "Data Visualization Tool",
     "projectAuthors": "Emily Brown",
+    "technologies" : [
+      "Angular",
+      "NodeJS",
+      "DynamoDB"
+    ],
     "projectDescription": "A powerful tool for visualizing complex data sets in an intuitive way.",
     "projectDate": "December 12, 2090",
     "projectImages": [
-      "./projectImages/data_tool_1.jpg",
-      "./projectImages/data_tool_2.jpg",
-      "./projectImages/data_tool_3.jpg",
-      "./projectImages/data_tool_4.jpg"
+      "../../../assets/projectImages/data_tool_1.jpg",
+      "../../../assets/projectImages/data_tool_2.jpg",
+      "../../../assets/projectImages/data_tool_3.jpg",
+      "../../../assets/projectImages/data_tool_4.jpg"
     ]
   }
 ]

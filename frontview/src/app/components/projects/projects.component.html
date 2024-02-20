@@ -1,1 +1,18 @@
 <p>projects works!</p>
+<p>Test results:</p>
+
+<div *ngIf="(!results)">
+    Error fetching data.
+  </div>
+  
+  <div *ngIf="(results)">
+    <div *ngFor="let result of results">
+      <p>Project title: {{ result.title }}</p>
+      <p>Project author(s): {{ result.author }}</p>
+      <p>Project technologies: {{result.technologies }}</p>
+      <p>Project description: {{result.description}}</p>
+      <p>Project Date: {{result.date}}</p>
+      <p>Project Image:<div *ngIf="result.images"><div *ngFor="let image of result.images"><ng-container *ngIf="imageExists(image)"><img [src]="image" alt="Project Image"></ng-container></div></div>
+      <hr>
+    </div>
+  </div>
