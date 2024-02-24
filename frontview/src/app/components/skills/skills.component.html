@@ -1,20 +1,23 @@
-<div class="skill-tree language-tree"> Languages:
-    <ul>
-         <li *ngFor="let language of languages">{{ language }}</li>
-    </ul>
-</div>
+<div class="skill-trees-wrapper">
+    <div class="skill-tree language-tree">
+        <h2>Languages:</h2>
+        <ul>
+            <li *ngFor="let language of languages">{{ language }}</li>
+        </ul>
+    </div>
 
-<div class="skill-tree framework-tree"> Frameworks:
-    <ul>
-        <li *ngFor="let framework of frameworks">{{ framework }}</li>
-    </ul>
-</div>
+    <div class="skill-tree framework-tree">
+        <h2>Frameworks:</h2>
+        <ul>
+            <li *ngFor="let framework of frameworks">{{ framework }}</li>
+        </ul>
+    </div>
 
-<div class="skill-tree service-tree"> Services:
-    <ul>
+    <div class="skill-tree service-tree">
+        <h2>Services:</h2>
+        <ul>
             <li *ngFor="let service of services">{{ service }}</li>
-    </ul>
+        </ul>
+    </div>
 </div>
-
-
 

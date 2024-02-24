@@ -1,15 +1,14 @@
 img {
-  width: 20px; /* Adjust the width as needed */
-  height: 20px; /* Adjust the height as needed */
-  border-radius: 20%; /* Make it a circle */
-  object-fit: cover; /* Maintain aspect ratio */
+  width: 35px; 
+  height: 35px; 
+  border-radius: 20%; 
+  object-fit: cover; 
 }
 
 .github-icon, .email-icon {
-  margin-left: 1vw;
+  margin-left: 10px;
 }
 
 .connection-box {
-  margin-left: 0.8vw;
-  margin-top: -0.3vw;
+
 }
