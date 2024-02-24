@@ -61,5 +61,20 @@
       "../../../assets/projectImages/data_tool_3.jpg",
       "../../../assets/projectImages/data_tool_4.jpg"
     ]
+  },
+  {
+    "projectTitle": "An Extra Test for Project",
+    "projectAuthors": "OH YEAH? NICE",
+    "technologies" : [
+      "Angular",
+      "NodeJS",
+      "DynamoDB",
+      "AWS"
+    ],
+    "projectDescription": "I made this entry as an extra test before I finally sleep!.",
+    "projectDate": "December 10, 2077",
+    "projectImages": [
+      "../../../assets/projectImages/Lmao.jpg"
+    ]
   }
 ]

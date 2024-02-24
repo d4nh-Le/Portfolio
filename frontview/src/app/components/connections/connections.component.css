@@ -4,3 +4,12 @@ img {
   border-radius: 20%; /* Make it a circle */
   object-fit: cover; /* Maintain aspect ratio */
 }
+
+.github-icon, .email-icon {
+  margin-left: 1vw;
+}
+
+.connection-box {
+  margin-left: 0.8vw;
+  margin-top: -0.3vw;
+}

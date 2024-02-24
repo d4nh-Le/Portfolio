@@ -1,21 +1,25 @@
 .info-avatar {
     border-radius: 50%;
-    width: 250px; /* Adjust as needed */
-    height: 250px; /* Adjust as needed */
-    object-fit: cover; /* Ensures the image covers the entire space */
+    width: 250px; 
+    height: 250px; 
+    object-fit: cover; 
 }
 
-/* For small screens (up to 600px) */
-@media only screen and (max-width: 600px) {
-    /* Add responsive styles here */
+.info-box {
+    border: 2px;
+    border-style: groove;
+    padding:20px;
+    position: absolute;
 }
 
-/* For medium screens (601px to 900px) */
-@media only screen and (min-width: 601px) and (max-width: 900px) {
-    /* Add responsive styles here */
+.info-name {
+    font-family: Arial, Helvetica;
+    font-size: 23px;
+    overflow-wrap: break-word;
 }
 
-/* For large screens (901px and above) */
-@media only screen and (min-width: 901px) {
-    /* Add responsive styles here */
+.info-location {
+    font-family: Arial, Helvetica;
+    font-size: 13px;
+    margin-top: -20px;
 }
