@@ -6,7 +6,7 @@ async function fetchGitHubData() {
           name
           bio
           contributionsCollection {
-              commitContributionsByRepository(maxRepositories: 5) {
+              commitContributionsByRepository(maxRepositories: 10) {
                   contributions {
                       totalCount
                   }
@@ -19,7 +19,7 @@ async function fetchGitHubData() {
                           name
                           target {
                               ... on Commit {
-                                  history(first: 5) {
+                                  history(first: 50) {
                                       nodes {
                                           message
                                           committedDate
