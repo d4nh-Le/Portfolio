@@ -1,0 +1,37 @@
+.loading-message {
+    font-style: italic;
+    color: #666;
+  }
+  
+  .error-message {
+    color: red;
+  }
+  
+  .commit-container {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .commit {
+    margin-bottom: 15px;
+  }
+  
+  .repository {
+    font-weight: bold;
+  }
+  
+  .message {
+    margin-top: 5px;
+  }
+  
+  .date {
+    color: #666;
+  }
+  
+  .divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+  }
+  

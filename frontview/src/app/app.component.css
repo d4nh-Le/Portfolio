@@ -1,0 +1,8 @@
+.container {
+    display: flex;
+}
+
+.component {
+    flex: auto;
+    margin: 10px; /* Adjust margin as needed */
+}

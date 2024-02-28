@@ -1,6 +1,6 @@
 .skill-trees-wrapper {
     display: flex; /* Set flexbox container */
-    position: absolute;
+    position: fixed;
     justify-content: space-between; /* Distribute items evenly along the main axis */
 }
 

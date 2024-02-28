@@ -60,40 +60,50 @@ async function fetchGitHubData() {
 }
 
 async function filterCommits(jsonData) {
-  if (!jsonData || !jsonData.data || !jsonData.data.user) {
+    if (!jsonData || !jsonData.data || !jsonData.data.user) {
       console.error("Invalid JSON data format.");
       return [];
-  }
-
-  const allCommits = [];
-
-  // Extract commits from all repositories
-  (jsonData.data.user.contributionsCollection.commitContributionsByRepository || []).forEach(repo => {
+    }
+  
+    const commitsByDate = {};
+  
+    // Extract commits from all repositories and group them by date
+    (jsonData.data.user.contributionsCollection.commitContributionsByRepository || []).forEach(repo => {
       if (repo && repo.repository && repo.repository.defaultBranchRef && repo.repository.defaultBranchRef.target && repo.repository.defaultBranchRef.target.history && repo.repository.defaultBranchRef.target.history.nodes) {
-          const commits = repo.repository.defaultBranchRef.target.history.nodes.map(commit => ({
-              repository: {
-                  name: repo.repository.name,
-                  owner: {
-                      login: repo.repository.owner ? repo.repository.owner.login : ""
-                  },
-                  defaultBranchRef: {
-                      name: repo.repository.defaultBranchRef.name
-                  }
+        repo.repository.defaultBranchRef.target.history.nodes.forEach(commit => {
+          const date = new Date(commit.committedDate).toLocaleDateString(); // Group by date
+          if (!commitsByDate[date]) {
+            commitsByDate[date] = [];
+          }
+          commitsByDate[date].push({
+            repository: {
+              name: repo.repository.name,
+              owner: {
+                login: repo.repository.owner ? repo.repository.owner.login : ""
               },
-              message: commit.message,
-              committedDate: commit.committedDate
-          }));
-
-          allCommits.push(...commits);
+              defaultBranchRef: {
+                name: repo.repository.defaultBranchRef.name
+              }
+            },
+            message: commit.message,
+            committedDate: commit.committedDate
+          });
+        });
       }
-  });
-
-  // Sort commits by committedDate in descending order
-  allCommits.sort((a, b) => new Date(b.committedDate) - new Date(a.committedDate));
-
-  // Return only the latest 3 commits
-  return allCommits.slice(0, 3);
-}
+    });
+  
+    // Convert object to array and sort by date in descending order
+    const sortedCommits = Object.entries(commitsByDate)
+      .sort(([dateA], [dateB]) => new Date(dateB) - new Date(dateA))
+      .map(([date, commits]) => ({
+        date,
+        commits
+      }));
+  
+    // Limit to a maximum of 10 commits
+    return sortedCommits.slice(0, 10);
+  }
+  
 
 exports.githubGetInfo = async (req, res) => { 
   try {
