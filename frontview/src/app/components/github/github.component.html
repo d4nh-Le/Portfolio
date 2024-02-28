@@ -1,17 +1,20 @@
 <p>github works!</p>
 <p>Test results:</p>
 
-<div *ngIf="loadingState" class="loading-message">Loading leetcode info...</div>
+<div *ngIf="loadingState" class="loading-message">Loading GitHub info...</div>
 
 <div *ngIf="(!results && !loadingState)" class="error-message">
   Error fetching data.
 </div>
 
 <div *ngIf="(results)" class="commit-container">
-  <div *ngFor="let result of results" class="commit">
-    <p class="repository">Repository: {{ result.repository.owner }} / {{ result.repository.name }}</p>
-    <p class="message">Message: {{ result.commitMessage }}</p>
-    <p class="date">Date: {{ result.commitDate | date }}, ({{result.commitAgo}}),</p>
-    <hr class="divider">
+  <div *ngFor="let result of results" class="commit-group">
+    <h2 class="date-header">{{ result.date }}</h2>
+    <div *ngFor="let commit of result.commits" class="commit">
+      <p class="repository">Repository: {{ commit.repository.owner }} / {{ commit.repository.name }}</p>
+      <p class="message">Message: {{ commit.commitMessage }}</p>
+      <p class="date">Date: {{ commit.commitDate | date }}, ({{ commit.commitAgo }}),</p>
+      <hr class="divider">
+    </div>
   </div>
 </div>

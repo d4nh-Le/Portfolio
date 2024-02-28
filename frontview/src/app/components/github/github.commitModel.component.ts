@@ -6,4 +6,4 @@ export interface Commit {
     commitMessage: string;
     commitDate: Date;
     commitAgo: string;
-  }
+  };

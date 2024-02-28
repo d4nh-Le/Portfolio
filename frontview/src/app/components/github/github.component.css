@@ -1,37 +1,43 @@
-.loading-message {
-    font-style: italic;
-    color: #666;
+.commit-container {
+    font-family: Arial, sans-serif;
+    position: absolute;
   }
   
-  .error-message {
-    color: red;
+  .commit-group {
+    margin-bottom: 20px;
   }
   
-  .commit-container {
-    border: 1px solid #ddd;
-    padding: 10px;
+  .date-header {
+    font-size: 18px;
+    color: #0366d6;
     margin-bottom: 10px;
   }
   
   .commit {
-    margin-bottom: 15px;
+    background-color: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    padding: 10px;
+    border-radius: 6px;
   }
   
   .repository {
     font-weight: bold;
+    margin-bottom: 5px;
   }
   
   .message {
-    margin-top: 5px;
+    margin-bottom: 5px;
   }
   
   .date {
-    color: #666;
+    color: #586069;
+    font-size: 12px;
   }
   
   .divider {
-    border: none;
-    border-top: 1px solid #ddd;
+    border: 0;
+    border-top: 1px solid #e1e4e8;
     margin-top: 10px;
+    margin-bottom: 0;
   }
   

@@ -9,7 +9,7 @@ import { TimeAgoService } from '../serviceComponents/time-ago.service';
   styleUrls: ['./github.component.css']
 })
 export class GithubComponent {
-  results: Commit[] = [];
+  results: { date: string; commits: Commit[] }[] = [];
   loadingState: boolean = true;
 
   constructor(private http: HttpClient) { }
@@ -21,16 +21,20 @@ export class GithubComponent {
   fetchGHData() {
     this.http.get<any>('http://localhost:3000/github')
       .subscribe(
-        data => {
-          this.results = data.map((item: { repository: { name: any; owner: { login: any; }; }; message: any; committedDate: any}) => ({
-            repository: {
-              name: item.repository.name,
-              owner: item.repository.owner.login
-            },
-            commitMessage: item.message,
-            commitDate: new Date(item.committedDate),
-            commitAgo: TimeAgoService.calculateTimeAgo(item.committedDate),
-        }))},
+        (data: any[]) => {
+          this.results = data.map(item => ({
+            date: item.date,
+            commits: item.commits.map((commit: any) => ({
+              repository: {
+                name: commit.repository.name,
+                owner: commit.repository.owner.login
+              },
+              commitMessage: commit.message,
+              commitDate: new Date(commit.committedDate),
+              commitAgo: TimeAgoService.calculateTimeAgo(commit.committedDate),
+            }))
+          }));
+        },
         error => {
           console.error('Error:', error);
         },
@@ -39,5 +43,4 @@ export class GithubComponent {
         }
       );
   }
-
 }
