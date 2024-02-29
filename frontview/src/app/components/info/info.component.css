@@ -9,7 +9,7 @@
     border: 5px;
     border-style: groove;
     padding:20px;
-    position: fixed;
+    position: relative; 
 }
 
 .info-name {

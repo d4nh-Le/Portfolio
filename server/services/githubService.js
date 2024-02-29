@@ -99,8 +99,7 @@ async function filterCommits(jsonData) {
         date,
         commits
       }));
-  
-    // Limit to a maximum of 10 commits
+ 
     return sortedCommits.slice(0, 10);
   }
   

@@ -1,0 +1,25 @@
+.result-container {
+    font-family: Arial, sans-serif;
+    position: relative; 
+    margin-top: 20px; 
+  }
+  
+  .result-questions {
+    background-color: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  
+  .result-date {
+    color: #586069;
+    font-size: 12px;
+  }
+  
+  .divider {
+    border: 0;
+    border-top: 1px solid #e1e4e8;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  

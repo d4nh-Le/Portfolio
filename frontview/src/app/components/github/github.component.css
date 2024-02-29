@@ -1,6 +1,7 @@
 .commit-container {
     font-family: Arial, sans-serif;
-    position: absolute;
+    position: relative; 
+    margin-top: 20px; 
   }
   
   .commit-group {

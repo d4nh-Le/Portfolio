@@ -13,7 +13,7 @@
     <div *ngFor="let commit of result.commits" class="commit">
       <p class="repository">Repository: {{ commit.repository.owner }} / {{ commit.repository.name }}</p>
       <p class="message">Message: {{ commit.commitMessage }}</p>
-      <p class="date">Date: {{ commit.commitDate | date }}, ({{ commit.commitAgo }}),</p>
+      <p class="date">Date: {{ commit.commitDate | date }}, ({{ commit.commitAgo }})</p>
       <hr class="divider">
     </div>
   </div>
