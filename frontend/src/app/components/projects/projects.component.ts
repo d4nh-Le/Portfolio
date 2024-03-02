@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Project } from './projects.projectsModel.component';
 import { CommonModule } from '@angular/common';
+import { MatDialog } from '@angular/material/dialog';
+import { ProjectModalComponent } from './project-modal/project-modal.component';
 
 @Component({
   selector: 'app-projects',
@@ -13,7 +15,8 @@ import { CommonModule } from '@angular/common';
 export class ProjectsComponent {
   results: Project[] = [];
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, public dialog: MatDialog) {}
+  
 
   ngOnInit() {
     this.getData();
@@ -38,11 +41,12 @@ export class ProjectsComponent {
       );
   }
 
-  imageExists(imageUrl: string): boolean {
-    const http = new XMLHttpRequest();
-    http.open('HEAD', imageUrl, false);
-    http.send();
-    return http.status !== 404;
-  }
+  openModal(result: Project) {
+    const dialogRef = this.dialog.open(ProjectModalComponent, {
+      data: result
+    });
+
+
+}
 }
 

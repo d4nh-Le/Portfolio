@@ -1,0 +1,24 @@
+<div *ngIf="(!results)">
+    Error fetching data.
+</div>
+  
+<div *ngIf="(results)">
+    <p>Project title: {{ results.title }}</p>
+    <p>Project author(s): {{ results.author }}</p>
+    <p>Project technologies: {{results.technologies }}</p>
+    <p>Project description: {{results.description}}</p>
+    <p>Project Date: {{results.date}}</p>
+    <p>Project Image:
+        <div *ngIf="results.images">
+            <div *ngFor="let image of results.images">
+                <ng-container *ngIf="imageExists(image)">
+                    <img [src]="image" alt="Project Image">
+                </ng-container>
+            </div>
+        </div>
+    <hr>
+    <button (click)="close()">Close</button>
+</div>
+
+
+  
