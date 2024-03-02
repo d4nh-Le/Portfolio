@@ -1,4 +1,4 @@
-<p>projects works!</p>
+<!-- <p>projects works!</p>
 <p>Test results:</p>
 
 <div *ngIf="(!results)">
@@ -14,5 +14,14 @@
       <p>Project Date: {{result.date}}</p>
       <p>Project Image:<div *ngIf="result.images"><div *ngFor="let image of result.images"><ng-container *ngIf="imageExists(image)"><img [src]="image" alt="Project Image"></ng-container></div></div>
       <hr>
+    </div>
+  </div> -->
+
+
+  <div *ngIf="(results)">
+    <div *ngFor="let result of results" class="project-thumbnail">
+      <img [src]="result.images[0]" alt="Project Image">
+      <h3>{{ result.title }}</h3>
+      <p>{{ result.description }}</p>
     </div>
   </div>

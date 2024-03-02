@@ -30,7 +30,8 @@ export class LeetcodeComponent implements OnInit {
             statusDisplay: item.statusDisplay,
             language: item.lang,
             Date: item.formattedDate,
-        }))},
+          }));
+        },
         error => {
           console.error('Error:', error);
         },
