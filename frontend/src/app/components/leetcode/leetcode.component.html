@@ -1,0 +1,19 @@
+<p>leetcode works!</p>
+<p>Test results:</p>
+
+<div *ngIf="loadingState">Loading leetcode info...</div>
+
+<div *ngIf="(!results && !loadingState)">
+  Error fetching data.
+</div>
+
+<div *ngIf="(results)" class="result-container">
+  <div *ngFor="let result of results" class="result-questions">
+    <p>Problem: {{ result.title }} / <a href="https://leetcode.com/problems/{{result.titleSlug}}/description/">at Leetcode</a></p>
+    <p>Language: {{ result.language }}</p>
+    <p>Status: {{result.statusDisplay}}</p>
+    <p class="result-date">Date: {{ result.Date | date }}, ({{result.timestamp}}),</p>
+    <hr class="divider">
+  </div>
+</div>
+

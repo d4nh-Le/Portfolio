@@ -1,0 +1,44 @@
+.commit-container {
+    font-family: Arial, sans-serif;
+    position: relative; 
+    margin-top: 20px; 
+  }
+  
+  .commit-group {
+    margin-bottom: 20px;
+  }
+  
+  .date-header {
+    font-size: 18px;
+    color: #0366d6;
+    margin-bottom: 10px;
+  }
+  
+  .commit {
+    background-color: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  
+  .repository {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .message {
+    margin-bottom: 5px;
+  }
+  
+  .date {
+    color: #586069;
+    font-size: 12px;
+  }
+  
+  .divider {
+    border: 0;
+    border-top: 1px solid #e1e4e8;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  

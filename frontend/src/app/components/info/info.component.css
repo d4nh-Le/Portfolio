@@ -1,0 +1,25 @@
+.info-avatar {
+    border-radius: 50%;
+    width: 350px; 
+    height: 350px; 
+    object-fit: cover; 
+}
+
+.info-box {
+    border: 5px;
+    border-style: groove;
+    padding:20px;
+    position: relative; 
+}
+
+.info-name {
+    font-family: Arial, Helvetica;
+    font-size: 28px;
+    overflow-wrap: break-word;
+}
+
+.info-location {
+    font-family: Arial, Helvetica;
+    font-size: 16px;
+    margin-top: -20px;
+}
