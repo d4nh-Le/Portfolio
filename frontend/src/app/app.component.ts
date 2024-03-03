@@ -19,5 +19,9 @@ import { ProjectModalComponent } from './components/projects/project-modal/proje
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  modalOpen = false;
 
+  updateModalState(state: boolean) {
+    this.modalOpen = state;
+  }
 }

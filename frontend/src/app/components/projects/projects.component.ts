@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, EventEmitter, Output} from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Project } from './projects.projectsModel.component';
 import { CommonModule } from '@angular/common';
@@ -18,6 +18,7 @@ export class ProjectsComponent {
 
   constructor(private http: HttpClient, public dialog: MatDialog) {}
   clickPosition: { top: number, left: number } = { top: 0, left: 0 };
+  @Output() modalOpen = new EventEmitter<boolean>();
   
 
   ngOnInit() {
@@ -45,17 +46,22 @@ export class ProjectsComponent {
 
 
 openModal(result: Project, event: MouseEvent) {
+  this.modalOpen.emit(true)
   const rect = (event.target as HTMLElement).getBoundingClientRect();
-    this.clickPosition = {
-      top: rect.top + window.scrollY,
-      left: rect.left + window.scrollX
-    }
-  const dialogRef = this.dialog.open(ProjectModalComponent, {
-    data: result,
-    position: {
-      top: `${this.clickPosition.top}px`,
-      left: `${this.clickPosition.left}px`
-    }
-  });
+      this.clickPosition = {
+        top: rect.top + window.scrollY,
+        left: rect.left + window.scrollX
+      }
+    const dialogRef = this.dialog.open(ProjectModalComponent, {
+      data: result,
+      position: {
+        top: `${this.clickPosition.top}px`,
+        left: `${this.clickPosition.left}px`
+      }
+    });
+
+    dialogRef.afterClosed().subscribe(() => {
+      this.modalOpen.emit(false);
+    });
 }
 }
