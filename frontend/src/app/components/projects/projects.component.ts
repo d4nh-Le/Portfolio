@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Project } from './projects.projectsModel.component';
 import { CommonModule } from '@angular/common';
 import { MatDialog } from '@angular/material/dialog';
 import { ProjectModalComponent } from './project-modal/project-modal.component';
+
 
 @Component({
   selector: 'app-projects',
@@ -16,6 +17,7 @@ export class ProjectsComponent {
   results: Project[] = [];
 
   constructor(private http: HttpClient, public dialog: MatDialog) {}
+  clickPosition: { top: number, left: number } = { top: 0, left: 0 };
   
 
   ngOnInit() {
@@ -41,11 +43,19 @@ export class ProjectsComponent {
       );
   }
 
-openModal(result: Project, event: Event) {
-  event.stopPropagation();
+
+openModal(result: Project, event: MouseEvent) {
+  const rect = (event.target as HTMLElement).getBoundingClientRect();
+    this.clickPosition = {
+      top: rect.top + window.scrollY,
+      left: rect.left + window.scrollX
+    }
   const dialogRef = this.dialog.open(ProjectModalComponent, {
-    data: result
+    data: result,
+    position: {
+      top: `${this.clickPosition.top}px`,
+      left: `${this.clickPosition.left}px`
+    }
   });
-  event.preventDefault();
 }
 }

@@ -1,4 +1,4 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 
@@ -15,7 +15,7 @@ export class ProjectModalComponent {
     @Inject(MAT_DIALOG_DATA) public results: any,
     public dialogRef: MatDialogRef<ProjectModalComponent>) {}
 
-  close() {
+  closeModal() {
     this.dialogRef.close();
   }
 
