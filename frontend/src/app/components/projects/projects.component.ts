@@ -41,12 +41,11 @@ export class ProjectsComponent {
       );
   }
 
-  openModal(result: Project) {
-    const dialogRef = this.dialog.open(ProjectModalComponent, {
-      data: result
-    });
-
-
+openModal(result: Project, event: Event) {
+  event.stopPropagation();
+  const dialogRef = this.dialog.open(ProjectModalComponent, {
+    data: result
+  });
+  event.preventDefault();
 }
 }
-

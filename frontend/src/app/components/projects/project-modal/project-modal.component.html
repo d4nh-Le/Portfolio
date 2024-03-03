@@ -1,24 +1,28 @@
-<div *ngIf="(!results)">
-    Error fetching data.
-</div>
-  
-<div *ngIf="(results)">
-    <p>Project title: {{ results.title }}</p>
-    <p>Project author(s): {{ results.author }}</p>
-    <p>Project technologies: {{results.technologies }}</p>
-    <p>Project description: {{results.description}}</p>
-    <p>Project Date: {{results.date}}</p>
-    <p>Project Image:
-        <div *ngIf="results.images">
-            <div *ngFor="let image of results.images">
-                <ng-container *ngIf="imageExists(image)">
-                    <img [src]="image" alt="Project Image">
-                </ng-container>
+
+<div class="modal">
+    <div class="modal-content">
+        <div *ngIf="(!results)">
+            Error fetching data.
+        </div>
+        
+        <div *ngIf="(results)">
+            <p class="modal-title">Project title: {{ results.title }}</p>
+            <p>Project author(s): {{ results.author }}</p>
+            <p>Project technologies: {{results.technologies }}</p>
+            <p class="modal-description">Project description: {{results.description}}</p>
+            <p>Project Date: {{results.date}}</p>
+            <p>Project Image:
+                <div *ngIf="results.images">
+                    <div *ngFor="let image of results.images">
+                        <ng-container *ngIf="imageExists(image)">
+                            <img [src]="image" alt="Project Image" class="modal-image">
+                        </ng-container>
+                    </div>
+                </div>
+            <hr>
+            <div class="modal-close">
+                <button (click)="close()">X</button>
             </div>
         </div>
-    <hr>
-    <button (click)="close()">Close</button>
+    </div>
 </div>
-
-
-  

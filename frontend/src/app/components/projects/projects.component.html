@@ -1,8 +1,7 @@
-
 <div *ngIf="results">
-    <div *ngFor="let result of results" class="project-thumbnail" (click)="openModal(result)">
+    <div *ngFor="let result of results" class="project-thumbnail" (click)="openModal(result, $event); $event.stopPropagation()">
         <img [src]="result.images[0]" alt="Project Image">
         <h3>{{ result.title }}</h3>
         <p>{{ result.description }}</p>
     </div>
-</div>
+</div>      
