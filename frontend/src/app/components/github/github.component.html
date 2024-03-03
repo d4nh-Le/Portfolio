@@ -1,3 +1,6 @@
+<p>github works!</p>
+<p>Test results:</p>
+
 <div *ngIf="loadingState" class="loading-message">Loading GitHub info...</div>
 
 <div *ngIf="(!results && !loadingState)" class="error-message">
@@ -6,7 +9,7 @@
 
 <div *ngIf="(results)" class="commit-container">
   <div *ngFor="let result of results" class="commit-group">
-    <h2 class="date-header">{{ result.date }}</h2>
+    <div class="date-decoration"><h2 class="date-header">Commits on: {{ result.date }}</h2></div>
     <div *ngFor="let commit of result.commits" class="commit">
       <p class="repository">Repository: {{ commit.repository.owner }} / {{ commit.repository.name }}</p>
       <p class="message">Message: {{ commit.commitMessage }}</p>

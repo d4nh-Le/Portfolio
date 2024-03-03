@@ -1,27 +1,24 @@
 .skill-trees-wrapper {
-    display: flex; /* Set flexbox container */
+    display: flex; 
     position: relative; 
-    justify-content: space-between; /* Distribute items evenly along the main axis */
+    justify-content: space-between; 
 }
 
 .skill-tree {
-    flex-basis: calc(33.33% - 10px); /* Set initial size for each skill tree, accounting for border and margin */
-    border: 1px solid #ccc; /* Add border to skill tree */
-    padding: 10px; /* Add padding inside the skill tree */
+    flex-basis: calc(33.33% - 10px); 
+    border: 1px solid #ccc; 
+    padding: 10px; 
 }
 
 .skill-tree h2 {
-    margin-bottom: 5px; /* Add margin below title */
+    margin-bottom: 5px; 
 }
 
 .skill-tree ul {
-    list-style-type: none; /* Remove default bullet points */
+    list-style-type: none; 
     padding: 0;
 }
 
 .skill-tree li {
-    margin-bottom: 5px; /* Add margin between list items */
+    margin-bottom: 5px; 
 }
-
-/* Adjust margin between skill trees */
-
