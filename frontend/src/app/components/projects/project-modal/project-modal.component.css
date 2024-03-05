@@ -102,10 +102,10 @@
 .typing-animation {
     overflow: hidden;
     white-space: nowrap;
-    animation: typing 5s steps(40, end) 1 forwards;
+    animation: typing 1s steps(40, end) 1 forwards;
     animation-fill-mode: forwards;
     animation-timing-function: steps(40, end), ease-in-out;
-    font-family: monospace; /* Use a monospace font for a more typewriter-like effect */
+    font-family: monospace;
 }
 
 @keyframes typing {
