@@ -1,8 +1,16 @@
 <div class="info-box">
-    <p><img class="info-avatar" src="../../../assets/IMG_4112_final.jpg" alt='image'></p>
-    <p class="info-name">{{name}}</p>
-    <p class="info-location">{{location}}</p>
-    <!-- <p class="info-description">{{description}}</p> -->
-    <app-connections></app-connections>
+    <div class="info-left">
+        <p><img class="info-avatar" src="../../../assets/IMG_4112_final.jpg" alt='image'></p>
+        <div class="info-left-text">
+        <p class="info-name">{{name}}</p>
+        <p class="info-location">{{location}}</p>
+        <app-connections></app-connections>
     </div>
-    
+    </div>
+    <div class="info-right">
+        <div class="descriptions">  
+            <div class="description-welcome">Welcome</div>
+            <p class="description-detail">{{description}}</p>
+        </div>
+    </div>
+</div>
