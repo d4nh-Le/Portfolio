@@ -12,15 +12,8 @@ import { ConnectionsComponent } from '../connections/connections.component';
 export class InfoComponent {
   name: string = "Danh Le";
   location: string = "Calgary, AB"
-  description: string  = "";
-
+  description_en: string  = "My name is Danh Le, a junior software developer based in Calgary, Alberta, Canada. I'm passionate about creating solutions that bring high values to the people around.";
+  description_fr: string = "Je m'appelle Danh Le, un jeune développeur de logiciels basé à Calgary, Alberta, Canada. Je suis passionné par la création de solutions qui apportent une grande valeur aux personnes autour.";
   constructor(private http: HttpClient) {}
-
-  ngOnInit() {
-    this.http.get('assets/summary_description.txt', { responseType: 'text' })
-      .subscribe(data => {
-        this.description = data;
-      });
-  }
 }
 
