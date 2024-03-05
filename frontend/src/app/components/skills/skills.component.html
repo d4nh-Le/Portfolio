@@ -1,22 +1,23 @@
+<div class="skill-header">I'm capable of:</div>
 <div class="skill-trees-wrapper">
     <div class="skill-tree language-tree">
-        <h2>Languages:</h2>
+        <div class="skill-tree-category language">Languages</div>
         <ul>
-            <li *ngFor="let language of languages">{{ language }}</li>
+            <li *ngFor="let language of languages"><div class="skills">{{ language }}</div></li>
         </ul>
     </div>
 
     <div class="skill-tree framework-tree">
-        <h2>Frameworks:</h2>
+        <div class="skill-tree-category framework">Frameworks</div>
         <ul>
-            <li *ngFor="let framework of frameworks">{{ framework }}</li>
+            <li *ngFor="let framework of frameworks"><div class="skills">{{ framework }}</div></li>
         </ul>
     </div>
 
     <div class="skill-tree service-tree">
-        <h2>Services:</h2>
+        <div class="skill-tree-category service">Services</div>
         <ul>
-            <li *ngFor="let service of services">{{ service }}</li>
+            <li *ngFor="let service of services"><div class="skills">{{ service }}</div></li>
         </ul>
     </div>
 </div>

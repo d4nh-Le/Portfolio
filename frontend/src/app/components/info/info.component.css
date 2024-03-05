@@ -1,6 +1,11 @@
 @font-face {
-    font-family: 'YourFontName';
+    font-family: 'Orbitron';
     src: url('../../../assets/fonts/Orbitron/static/Orbitron-Bold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Noto Sans';
+    src: url('../../../assets/fonts/Noto_Sans/static/NotoSans-Regular.ttf') format('truetype');
   }
 
 .info-avatar {
@@ -59,13 +64,14 @@
 }
 
 .description-detail {
-  font-size: 28px;
+  font-size: 24px;
   color: #555; 
   margin-top: 10px;
+  font-family: 'Noto Sans';
 }
 
 .description-welcome {
-    font-family: 'YourFontName', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     font-size: 70px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -87,12 +93,12 @@
     10.2558%, 17.0930% { content: "developer"; }
   
     30.7674%, 51.2791% { content: ""; }
-    31.9070%, 50.1395% { content: "s"; }
-    33.0465%, 49.0000% { content: "st"; }
-    34.1860%, 47.8605% { content: "stu"; }
-    35.3256%, 46.7209% { content: "stud"; }
-    36.4651%, 45.5814% { content: "stude"; }
-    37.6047%, 44.4419% { content: "student"; }
+    31.9070%, 50.1395% { content: "a"; }
+    33.0465%, 49.0000% { content: "ac"; }
+    34.1860%, 47.8605% { content: "ach"; }
+    35.3256%, 46.7209% { content: "achie"; }
+    36.4651%, 45.5814% { content: "achieve"; }
+    37.6047%, 44.4419% { content: "achiever"; }
   
     54.6977%, 75.2093% { content: ""; }
     55.8372%, 74.0698% { content: "l"; }

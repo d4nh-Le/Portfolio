@@ -1,24 +1,76 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../../../assets/fonts/Orbitron/static/Orbitron-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../../../assets/fonts/Noto_Sans/static/NotoSans-Regular.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'Orbitron-med';
+    src: url('../../../assets/fonts/Orbitron/static/Orbitron-Medium.ttf') format('truetype');
+}
+
+.skill-header {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Orbitron';
+}
+
 .skill-trees-wrapper {
-    display: flex; 
-    position: relative; 
-    justify-content: space-between; 
+    display: flex;
+    justify-content: space-between;
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+    border-right: 5px solid #000;
+    border-radius: 10px;
+    width: 800px;
+    margin-left: 30px;
 }
 
 .skill-tree {
-    flex-basis: calc(33.33% - 10px); 
-    border: 1px solid #ccc; 
-    padding: 10px; 
+    flex: 1;
+    margin-right: 20px;
+    text-align: center;
+    border-left: 5px solid #000;
 }
 
-.skill-tree h2 {
-    margin-bottom: 5px; 
+.skill-tree-category {
+    font-size: 22px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-family: 'Orbitron-med';
+}
+
+.language {
+    margin-left: 13px;
+}
+
+.framework {
+    margin-left: 18px;
+}
+
+.service {
+    margin-left: 16.5px;
 }
 
 .skill-tree ul {
-    list-style-type: none; 
+    list-style-type: none;
     padding: 0;
 }
 
 .skill-tree li {
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
+}
+
+.skills {
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-left: 13px;
+    font-family: 'Noto Sans';
 }
