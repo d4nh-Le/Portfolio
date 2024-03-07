@@ -14,6 +14,7 @@ import { Commit } from './github.commitModel.component';
 export class GithubComponent {
   results: { date: string; commits: Commit[] }[] = [];
   loadingState: boolean = true;
+  displayedResults = 3;
 
   constructor(private http: HttpClient) { }
   ngOnInit() {

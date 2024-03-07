@@ -8,7 +8,7 @@
 </div>
 
 <div *ngIf="(results)" class="result-container">
-  <div *ngFor="let result of results" class="result-questions">
+  <div *ngFor="let result of results | slice:0:displayedResults" class="result-questions">
     <p>Problem: {{ result.title }} / <a href="https://leetcode.com/problems/{{result.titleSlug}}/description/">at Leetcode</a></p>
     <p>Language: {{ result.language }}</p>
     <p>Status: {{result.statusDisplay}}</p>
@@ -16,4 +16,4 @@
     <hr class="divider">
   </div>
 </div>
-
+<button *ngIf="results.length > displayedResults" (click)="displayedResults = displayedResults + 3">See More</button>
