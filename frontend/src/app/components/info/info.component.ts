@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http'; 
-import { ConnectionsComponent } from '../connections/connections.component'; 
+import { ConnectionsComponent } from '../connections/connections.component';
+import { MenuBarComponent } from '../general-components/menu-bar/menu-bar.component';
 
 @Component({
   selector: 'app-info',
   standalone: true,
-  imports: [ConnectionsComponent],
+  imports: [ConnectionsComponent, MenuBarComponent],
   templateUrl: './info.component.html',
   styleUrl: './info.component.css'
 })
