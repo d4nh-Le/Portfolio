@@ -16,9 +16,9 @@ import { ProjectModalComponent } from './project-modal/project-modal.component';
 export class ProjectsComponent {
   results: Project[] = [];
 
-  constructor(private http: HttpClient, public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog, private http: HttpClient) {}
   clickPosition: { top: number, left: number } = { top: 0, left: 0 };
-  @Output() modalOpen = new EventEmitter<boolean>();
+  // @Output() modalOpen = new EventEmitter<boolean>();
   
 
   ngOnInit() {
@@ -38,7 +38,7 @@ export class ProjectsComponent {
             images: project.projectImages
           }));
         },
-        error => {
+        (error: any) => { 
           console.error('Error:', error);
         }
       );
@@ -46,22 +46,22 @@ export class ProjectsComponent {
 
 
 openModal(result: Project, event: MouseEvent) {
-  this.modalOpen.emit(true)
-  const rect = (event.target as HTMLElement).getBoundingClientRect();
-      this.clickPosition = {
-        top: rect.top + window.scrollY,
-        left: rect.left + window.scrollX
-      }
+  // this.modalOpen.emit(true)
+  // const rect = (event.target as HTMLElement).getBoundingClientRect();
+  //     this.clickPosition = {
+  //       top: rect.top + window.scrollY,
+  //       left: rect.left + window.scrollX
+  //     }
     const dialogRef = this.dialog.open(ProjectModalComponent, {
       data: result,
-      position: {
-        top: `${this.clickPosition.top}px`,
-        left: `${this.clickPosition.left}px`
-      }
+      // position: {
+      //   top: `${this.clickPosition.top}px`,
+      //   left: `${this.clickPosition.left}px`
+      // }
     });
 
     dialogRef.afterClosed().subscribe(() => {
-      this.modalOpen.emit(false);
+      // this.modalOpen.emit(false);
     });
 }
 }
