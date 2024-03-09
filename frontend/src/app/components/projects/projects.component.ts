@@ -4,12 +4,13 @@ import { Project } from './projects.projectsModel.component';
 import { CommonModule } from '@angular/common';
 import { MatDialog } from '@angular/material/dialog';
 import { ProjectModalComponent } from './project-modal/project-modal.component';
+import { MenuBarComponent } from '../general-components/menu-bar/menu-bar.component';
 
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, MenuBarComponent],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })
