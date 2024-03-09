@@ -1,3 +1,9 @@
+const fs = require('fs');
+const path = require('path');
+
+let lastRequestTime = null;
+let cachedData = null;
+
 const query = `
   query getUserProfile($username: String!) {
     recentSubmissionList(username: $username) {
@@ -28,8 +34,9 @@ const query = `
   }
 `;
 
-
 async function leetcodeGetInfo() {
+  const currentTime = new Date();
+  if (!lastRequestTime || (currentTime - lastRequestTime) > 2 * 60 * 1000) {
     try {
       const response = await fetch('https://leetcode.com/graphql', {
         method: 'POST',
@@ -42,12 +49,22 @@ async function leetcodeGetInfo() {
 
       const data = await response.json();
       console.log('Raw Leetcode Data:', data); // Log the raw data before filtering
+
+      cachedData = data;
+      lastRequestTime = currentTime;
+    
+      fs.writeFileSync(path.join(__dirname, '..', 'services', 'assets', 'leetcode.json'), JSON.stringify(data));
       return data;
     }
     catch(error) { 
       console.error('Error fetching Leetcode data:', error);
       throw error;
     }
+  }
+  else {
+    const data = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'services', 'assets', 'leetcode.json'), 'utf-8'));
+    return data;
+  }
 }
 
 async function filterAcceptedTries(data) {

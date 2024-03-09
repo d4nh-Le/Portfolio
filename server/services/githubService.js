@@ -1,3 +1,9 @@
+const fs = require('fs');
+const path = require('path');
+
+let lastRequestTime = null;
+let cachedData = null;
+
 async function fetchGitHubData() {
   const query = `
   query GetUserInformationWithCommits($username: String!) {
@@ -35,6 +41,8 @@ async function fetchGitHubData() {
   }
   `;
 
+  const currentTime = new Date();
+  if (!lastRequestTime || (currentTime - lastRequestTime) > 2 * 60 * 1000) {
   const headers = {
       'Content-type': 'application/json',
       'Authorization': `Bearer ${process.env.GH_TOKEN}`,
@@ -52,11 +60,23 @@ async function fetchGitHubData() {
       }
 
       const data = await response.json();
+
+      cachedData = data;
+      lastRequestTime = currentTime;
+    
+      fs.writeFileSync(path.join(__dirname, '..', 'services', 'assets', 'github.json'), JSON.stringify(data));
+
+      
       return data;
   } catch (error) {
       console.error('Error fetching GitHub data:', error);
       throw error;
   }
+}
+else {
+  const data = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'services', 'assets', 'github.json'), 'utf-8'));
+  return data;
+}
 }
 
 async function filterCommits(jsonData) {
