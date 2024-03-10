@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { GithubComponent } from '../../github/github.component';
-import { LeetcodeComponent } from '../../leetcode/leetcode.component';
-import { MenuBarComponent } from '../menu-bar/menu-bar.component';
+import { GithubComponent } from '../../../github/github.component';
+import { LeetcodeComponent } from '../../../leetcode/leetcode.component';
+import { MenuBarComponent } from '../../menu-bar/menu-bar.component';
 
 @Component({
   selector: 'app-recent-activity',

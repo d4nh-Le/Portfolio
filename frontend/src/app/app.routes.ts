@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ProjectsComponent } from './components/projects/projects.component';
-import { InfoComponent } from './components/info/info.component';
-import { RecentActivityComponent } from './components/general-components/recent-activity/recent-activity.component';
+import { RecentActivityComponent } from './components/general-components/containers/recent-activity/recent-activity.component';
+import { HomeContainerComponent } from './components/general-components/containers/home-container/home-container.component';
+import { ProjectContainerComponent } from './components/general-components/containers/project-container/project-container.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component: InfoComponent },
+  { path: 'home', component: HomeContainerComponent },
   { path: 'activities', component: RecentActivityComponent },
-  { path: 'projects', component: ProjectsComponent },
+  { path: 'projects', component: ProjectContainerComponent },
 ];
 
 @NgModule({
