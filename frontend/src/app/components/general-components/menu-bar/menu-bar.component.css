@@ -1,9 +1,12 @@
 /* menu-bar.component.css */
 
 .menu-bar {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end;
     background-color: #f2f2f2;
     padding: 10px;
 }
@@ -13,8 +16,10 @@
     padding: 5px;
     color: #333;
     text-decoration: none;
+    display: block; /* Add this line */
 }
 
 .menu-item:hover {
     background-color: #ddd;
 }
+
