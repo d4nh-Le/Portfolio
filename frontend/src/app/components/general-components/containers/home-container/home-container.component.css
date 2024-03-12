@@ -14,11 +14,25 @@
     left: 5%;
     right: 5%;
     margin-right: 10%;
-    display: flex;
+    display:flex;
     flex-direction: column;
     align-items: center;
     animation: fade-in 1s ease-in-out;
     opacity: 0;
     transform: translateY(20px);
     animation-fill-mode: forwards;
+}
+
+body {
+    margin-top: -20px;
+    margin-left: -10px;
+    margin-right: -8px;
+    margin-bottom: -10px;
+    background-image: url('../../../../../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: fade-in 1s ease-in-out;
+    vertical-align: top;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }

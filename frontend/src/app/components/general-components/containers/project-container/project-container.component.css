@@ -1,0 +1,31 @@
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* .container {
+    position: relative;
+    left: 5%;
+    right: 5%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fade-in 1s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+    animation-fill-mode: forwards;
+} */
+
+body {
+    background-image: url('../../../../../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: fade-in 1s ease-in-out;
+}
