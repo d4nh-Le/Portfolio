@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SkillsComponent } from './components/skills/skills.component';
-import { ConnectionsComponent } from './components/connections/connections.component';
 import { GithubComponent } from './components/github/github.component';
 import { InfoComponent } from './components/info/info.component';
 import { LeetcodeComponent } from './components/leetcode/leetcode.component';
@@ -14,7 +13,7 @@ import { ProjectModalComponent } from './components/projects/project-modal/proje
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ProjectModalComponent, ProjectsComponent, LeetcodeComponent, SkillsComponent, ConnectionsComponent, GithubComponent, InfoComponent],
+  imports: [RouterOutlet, ProjectModalComponent, ProjectsComponent, LeetcodeComponent, SkillsComponent, GithubComponent, InfoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
