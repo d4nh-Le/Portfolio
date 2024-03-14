@@ -25,20 +25,41 @@
 .skill-trees-wrapper {
     display: flex;
     justify-content: space-between;
-    border-top: 5px solid #000;
-    border-bottom: 5px solid #000;
-    border-right: 5px solid #000;
-    border-radius: 10px;
     width: 800px;
     margin-left: 30px;
     margin-bottom: 42px;
+    position: relative;
+    width: 190px;
+    height: 254px;
+    background: rgb(255, 0, 179);
+    background: linear-gradient(137deg, rgb(255, 0, 179) 0%, rgba(0,212,255,1) 100%);
+    transition: 0.3s ease;
+    border-radius: 30px;
+    filter: drop-shadow(0px 0px 30px rgba(209, 38, 197, 0.5));
 }
 
+.skill-trees-wrapper::after {
+    content: '';
+    background-color: #181818;
+    position: absolute;
+    z-index: 1;
+    transition: 0.3s ease;
+    height: 98%;
+    width: 98%;
+    top: 1%;
+    left: 1%;
+    border-radius: 28px;
+  }
+
+  .skill-trees-wrapper:hover {
+    filter: drop-shadow(0px 0px 30px rgba(209, 38, 197, 1));
+  }
+
 .skill-tree {
+    z-index: 80;
     flex: 1;
     margin-right: 20px;
     text-align: center;
-    border-left: 5px solid #000;
 }
 
 .skill-tree-category {
@@ -75,3 +96,31 @@
     margin-left: 13px;
     font-family: 'Noto Sans';
 }
+
+.card {
+    position: relative;
+    width: 190px;
+    height: 254px;
+    background: rgb(255, 0, 179);
+    background: linear-gradient(137deg, rgb(255, 0, 179) 0%, rgba(0,212,255,1) 100%);
+    transition: 0.3s ease;
+    border-radius: 30px;
+    filter: drop-shadow(0px 0px 30px rgba(209, 38, 197, 0.5));
+  }
+  
+  .card::after {
+    content: '';
+    background-color: #181818;
+    position: absolute;
+    z-index: 1;
+    transition: 0.3s ease;
+    height: 98%;
+    width: 98%;
+    top: 1%;
+    left: 1%;
+    border-radius: 28px;
+  }
+  
+  .card:hover {
+    filter: drop-shadow(0px 0px 30px rgba(209, 38, 197, 1));
+  }

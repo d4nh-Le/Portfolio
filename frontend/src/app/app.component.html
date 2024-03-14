@@ -19,6 +19,7 @@
     <p><app-projects (modalOpen)="updateModalState($event)"></app-projects></p>
   </div>
 </div> -->
+<app-loading-bar *ngIf="isLoading"></app-loading-bar>
 <router-outlet></router-outlet>
 
 

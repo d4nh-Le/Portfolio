@@ -1,26 +1,28 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { SkillsComponent } from './components/skills/skills.component';
-import { GithubComponent } from './components/github/github.component';
-import { InfoComponent } from './components/info/info.component';
-import { LeetcodeComponent } from './components/leetcode/leetcode.component';
-import { ProjectsComponent } from './components/projects/projects.component';
-import { ProjectModalComponent } from './components/projects/project-modal/project-modal.component';
-
+import { LoaderService } from './components/service-components/loader.service';
+import { LoadingBarComponent } from './components/general-components/loading-bar/loading-bar.component';
+import { OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ProjectModalComponent, ProjectsComponent, LeetcodeComponent, SkillsComponent, GithubComponent, InfoComponent],
+  imports: [RouterOutlet, LoadingBarComponent,  CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
-  modalOpen = false;
 
-  updateModalState(state: boolean) {
-    this.modalOpen = state;
+export class AppComponent implements OnInit {
+  isLoading: boolean = false;
+
+  constructor(private loaderService: LoaderService) {}
+
+  ngOnInit(): void {
+    this.loaderService.isLoading.subscribe((loading: boolean) => {
+      this.isLoading = true;
+    });
   }
 }
