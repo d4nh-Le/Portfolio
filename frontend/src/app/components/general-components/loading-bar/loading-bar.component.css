@@ -7,7 +7,10 @@
     border-radius: 50px;
     filter: blur(1px);
     box-shadow: 0px -5px 20px 0px rgb(186, 66, 255), 0px 5px 20px 0px rgb(0, 225, 255);
-  }
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
   
   .spinner1 {
     background-color: rgb(36, 36, 36);
@@ -22,3 +25,16 @@
       transform: rotate(360deg);
     }
   }
+
+  body {
+    margin: -9px;
+    box-sizing: border-box;
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    background-color: rgb(36, 36, 36);
+}
