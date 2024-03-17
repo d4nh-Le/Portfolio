@@ -21,6 +21,7 @@
     opacity: 0;
     transform: translateY(20px);
     animation-fill-mode: forwards;
+    margin-bottom: 12px;
 }
 
 body {

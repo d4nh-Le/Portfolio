@@ -22,3 +22,24 @@
     transform: translateY(20px);
     animation-fill-mode: forwards;
 }
+
+.container {
+    margin: 20px;
+
+}
+
+body {
+    margin: -9px;
+    box-sizing: border-box;
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    background-image: url('../../../../../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: fade-in 1s ease-in-out;
+}

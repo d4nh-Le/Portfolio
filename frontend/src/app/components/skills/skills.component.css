@@ -41,7 +41,7 @@
 
 .skill-trees-wrapper::after {
     content: '';
-    background-color: #181818;
+    background-color: #181818e3;
     position: absolute;
     z-index: 1;
     transition: 0.3s ease;
@@ -69,7 +69,7 @@
     margin-bottom: 5px;
     margin-top: 5px;
     font-family: 'Orbitron-med';
-    color: #e2e2e2; 
+    color: #c4c4c4
 }
 
 .language {
@@ -98,5 +98,5 @@
     margin-bottom: 5px;
     margin-left: 13px;
     font-family: 'Noto Sans';
-    color: #e2e2e2; 
+    color: #c4c4c4
 }
