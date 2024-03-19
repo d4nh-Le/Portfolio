@@ -16,22 +16,6 @@ a:visited {
   color: #24e75e; 
 }
 
-/* .result-container {
-    background-color: #5555558c;
-    border: 1px solid #ffffff;
-    display: flex;
-    flex-direction: column;
-    font-size: 13px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #ffffff;
-    padding: 20px;
-    padding-top: 50px;
-    border-radius: 45px;
-    width: 500px;
-    height: 800px;
-    overflow: scroll;
-  } */
-
 .result-container {
   --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
   width: 500px;

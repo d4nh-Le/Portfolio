@@ -24,6 +24,10 @@
     margin-bottom: 12px;
 }
 
+app-menu-bar {
+    margin-top: 20px;
+}
+
 body {
     margin: -9px;
     box-sizing: border-box;

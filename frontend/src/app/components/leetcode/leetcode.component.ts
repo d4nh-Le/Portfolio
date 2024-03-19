@@ -15,7 +15,7 @@ import { CommonModule } from '@angular/common';
 export class LeetcodeComponent implements OnInit {
   results: Submission[] = [];
   loadingState: boolean = true;
-  displayedResults: number = 3;
+  displayedResults: number = 4;
 
   constructor(private http: HttpClient) { }
 
