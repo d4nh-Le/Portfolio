@@ -34,6 +34,7 @@ export class ProjectsComponent {
             author: project.projectAuthors,
             technologies: project.technologies,
             description: project.projectDescription,
+            detail: project.projectDetail,
             date: project.projectDate,
             images: project.projectImages
           }));

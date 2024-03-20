@@ -1,42 +1,93 @@
 .project-thumbnail {
-    width: 200px;
-    height: 300px;
-    border: 1px solid black;
     float: left;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    padding: 10px; 
     overflow: hidden;
-    background-color: #f5f5f5;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+
 }
 
-.project-thumbnail:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+.card {
+    --font-color: #ffffff;
+    --bg-color: #72717e;
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    background: linear-gradient(to left, #1e1930 0%, #060513 100%);
+    box-shadow: -9px 9px 18px #5a5a5aa6,
+    9px -9px 18px #1e1930ad;
+    display: flex;
+    flex-direction: column;
+    transition: .4s;
+    position: relative;
+    margin: 20px;
+  }
 
-.project-thumbnail img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    object-fit: cover;
-    border-radius: 10%; 
-}
 
-.project-thumbnail h3 {
-    font-size: 18px;
-    margin-bottom: 5px;
-    color: #333;
+.card-inner {
+  color: #0d0c18;
+  background: var(--color);
+  color: var(--color);
+  width: 80%;
+  height: 80%;
+  overflow: visible;
+  border-radius: 0.7rem;
+  position: absolute;
 }
-
-.project-thumbnail p {
-    font-size: 14px;
-    margin-bottom: 5px;
-    overflow-wrap: break-word;
-    color: #777;
-}
+  
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 2px 2px #5a5a5a;
+  }
+  
+  .card__img img {
+    width: 95%;
+    height: 140px;
+    margin: 6px;
+    border-radius: 20px;
+  }
+  
+  .card__descr-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 40%;
+    overflow: hidden;
+  }
+  
+  .card__title {
+    color: var(--font-color);
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .card__descr {
+    color: var(--font-color);
+  }
+  
+  .svg {
+    width: 25px;
+    height: 25px;
+    transform: translateY(25%);
+    fill: var(--font-color);
+  }
+  
+  .card__links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-left :10px;
+  }
+  
+  .card__links .link {
+    color: var(--font-color);
+    font-weight: 600;
+    font-size: 12px;
+    text-decoration: none;
+    margin-left: 3px;
+  }
+  
+  .card__links .link:hover {
+    text-decoration: underline;
+  }
 
 @media (max-width: 768px) {
     .project-thumbnail {

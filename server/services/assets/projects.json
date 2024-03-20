@@ -8,12 +8,14 @@
       "DynamoDB"
     ],
     "projectDescription": "This wonderfull application is used to track expenses of the business. It also has a miracle to give the client a special buff to fly!",
+    "projectDetail":"55555555lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "projectDate": "June 9, 2069",
     "projectImages": [
       "../../../assets/projectImages/project_1_1.jpg",
       "../../../assets/projectImages/project_1_2.jpg"
     ]
-  },
+  }
+  ,
   {
     "projectTitle": "Project XYZ",
     "projectAuthors": "Jane Doe",
@@ -23,6 +25,7 @@
       "MongoDB"
     ],
     "projectDescription": "A cutting-edge application for managing tasks and scheduling appointments.",
+    "projectDetail":"4444444lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "projectDate": "October 15, 2075",
     "projectImages": [
       "../../../assets/projectImages/project_xyz_1.jpg",
@@ -39,6 +42,7 @@
       "DynamoDB"
     ],
     "projectDescription": "An innovative mobile app that helps users find the best restaurants nearby.",
+    "projectDetail":"33333lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "projectDate": "May 3, 2080",
     "projectImages": [
       "../../../assets/projectImages/awesome_app_1.jpg",
@@ -54,6 +58,7 @@
       "DynamoDB"
     ],
     "projectDescription": "A powerful tool for visualizing complex data sets in an intuitive way.",
+    "projectDetail":"222222lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "projectDate": "December 12, 2090",
     "projectImages": [
       "../../../assets/projectImages/data_tool_1.jpg",
@@ -72,7 +77,22 @@
       "AWS"
     ],
     "projectDescription": "I made this entry as an extra test before I finally sleep!.",
+    "projectDetail":"lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "projectDate": "December 10, 2077",
+    "projectImages": [
+      "../../../assets/projectImages/Lmao.jpg"
+    ]
+  },
+  {
+    "projectTitle": "Personal Portfolio",
+    "projectAuthors": "Danh Le",
+    "technologies" : [
+      "Angular",
+      "NodeJS"
+    ],
+    "projectDescription": "A personal website to showcase my skills and past projects experiences.",
+    "projectDetail":"This website is built using Angular and NodeJS. It is hosted on AWS S3 and CloudFront. The website is designed to be responsive and mobile-friendly. It is also integrated with Google Analytics to track user interactions.",
+    "projectDate": "March 12, 2024",
     "projectImages": [
       "../../../assets/projectImages/Lmao.jpg"
     ]
