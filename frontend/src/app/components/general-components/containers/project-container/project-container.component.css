@@ -1,4 +1,4 @@
-/* @keyframes fade-in {
+@keyframes fade-in {
     0% {
         opacity: 0;
         transform: translateY(20px);
@@ -22,7 +22,16 @@
     transform: translateY(20px);
     animation-fill-mode: forwards;
     margin-bottom: 12px;
-} */
+}
+
+app-menu-bar {
+    margin-top: 20px;
+}
+
+app-projects {
+    margin-left: 90px;
+    margin-top: 30px;
+}
 
 body {
     margin: -9px;

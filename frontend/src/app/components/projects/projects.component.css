@@ -1,7 +1,6 @@
 .project-thumbnail {
     float: left;
     overflow: hidden;
-
 }
 
 .card {
@@ -10,9 +9,9 @@
     width: 250px;
     height: 350px;
     border-radius: 20px;
-    background: linear-gradient(to left, #1e1930 0%, #060513 100%);
-    box-shadow: -9px 9px 18px #5a5a5aa6,
-    9px -9px 18px #1e1930ad;
+    background: linear-gradient(to left, #1e1930f2 0%, #060513e3 100%);
+    box-shadow: -9px 9px 18px #1e1930ad,
+    9px -9px 24px #1c2149a6;
     display: flex;
     flex-direction: column;
     transition: .4s;
