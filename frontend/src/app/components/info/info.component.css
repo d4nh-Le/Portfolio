@@ -59,7 +59,7 @@
 .card b {
   position: absolute;
   inset: 6px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgb(0 0 0 / 80%);
   z-index: 2;
 }
 

@@ -6,7 +6,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,6 +13,37 @@
     animation-duration: 1.0s;
     animation-timing-function: ease-in-out;
 }
+
+.card {
+    padding: 20px;
+    border-radius: 5px;
+    width: 1100px; /* Change width to a fixed value */
+    height: 800px; /* Change height to a fixed value */
+    overflow-y: hidden; /* Hide the vertical scrollbar */
+    background-color: rgba(0, 0, 0, 0.822);
+}
+
+
+
+.card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -5px;
+    margin: auto;
+    width: 1130px;
+    height: 830px;
+    border-radius: 10px;
+    background: linear-gradient(-45deg,  #0006ff 0%, #931b42 100%);
+    z-index: -10;
+    pointer-events: none;
+}
+
+.modal-description {
+    color: white;
+
+}
+
 
 .modal-title {
     font-size: 20px;
@@ -119,16 +149,9 @@
     }
 }
 
-.card {
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    border-radius: 5px;
-    width: 1100px; /* Change width to a fixed value */
-    height: 800px; /* Change height to a fixed value */
-    overflow-y: scroll;
-}
-  
-  /* .card::before {
+
+/*  
+  .card::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -167,5 +190,4 @@
     color: #e81cff;
     font-weight: 600;
   } */
-  
   

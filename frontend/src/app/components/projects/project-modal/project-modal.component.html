@@ -1,30 +1,28 @@
-
 <div class="modal">
-    <div class="card">
-        <div *ngIf="(!results)">
-            Error fetching data.
-        </div>
-        
-        <div *ngIf="(results)">
-            <p class="modal-title">Project title: {{ results.title }}</p>
-            <p>Project author(s): {{ results.author }}</p>
-            <p>Project technologies: {{results.technologies }}</p>
-            <p class="modal-description typing-animation">Project description: {{results.description}}</p>
-            <p>Project detail: {{ results.detail }}</p>
-            <p>Project Date: {{results.date}}</p>
-            <p>Project Image:
-                <div *ngIf="results.images">
-                    <div *ngFor="let image of results.images">
-                        <ng-container *ngIf="imageExists(image)">
-                            <img [src]="image" alt="Project Image" class="modal-image">
-                        </ng-container>
+        <div class="card">
+            <div *ngIf="(!results)">
+                Error fetching data.
+            </div>
+            
+            <div *ngIf="(results)" class="modal-description">
+                <p class="modal-title">Project title: {{ results.title }}</p>
+                <p>Project author(s): {{ results.author }}</p>
+                <p>Project technologies: {{results.technologies }}</p>
+                <p class="modal-description typing-animation">Project description: {{results.description}}</p>
+                <p>Project detail: {{ results.detail }}</p>
+                <p>Project Date: {{results.date}}</p>
+                <p>Project Image:
+                    <div *ngIf="results.images">
+                        <div *ngFor="let image of results.images">
+                            <ng-container *ngIf="imageExists(image)">
+                                <img [src]="image" alt="Project Image" class="modal-image">
+                            </ng-container>
+                        </div>
                     </div>
+                <hr>
+                <div class="modal-close">
+                    <button (click)="closeModal()">X</button>
                 </div>
-            <hr>
-            <div class="modal-close">
-                <button (click)="closeModal()">X</button>
             </div>
         </div>
-    </div>
-</div>
-
+    </div> 

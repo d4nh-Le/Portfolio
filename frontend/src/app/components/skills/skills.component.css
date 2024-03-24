@@ -41,7 +41,7 @@
 
 .skill-trees-wrapper::after {
     content: '';
-    background-color: #181818f6;
+    background-color: rgb(0 0 0 / 88%);
     position: absolute;
     z-index: 1;
     transition: 0.3s ease;
