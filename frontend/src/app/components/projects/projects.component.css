@@ -31,7 +31,6 @@
   background: linear-gradient(-45deg,  #0006ff 0%, #931b42 100%);
   z-index: -10;
   pointer-events: none;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .card::after {
