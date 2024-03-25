@@ -36,7 +36,8 @@ export class ProjectsComponent {
             description: project.projectDescription,
             detail: project.projectDetail,
             date: project.projectDate,
-            images: project.projectImages
+            images: project.projectImages,
+            url: project.projectLink
           }));
         },
         (error: any) => { 

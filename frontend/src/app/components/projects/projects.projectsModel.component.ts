@@ -6,4 +6,5 @@ export interface Project {
     detail:string;
     date: string;
     images: any;
+    url: string;
   }
