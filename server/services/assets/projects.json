@@ -1,6 +1,6 @@
 [
   {
-    "projectTitle": "Personal Portfolio Website",
+    "projectTitle": "Personal Portfolio",
     "projectAuthors": "Danh Le",
     "technologies" : [
       "angular",
@@ -8,7 +8,7 @@
       "awsec2"
     ],
     "projectDescription": "A personal portfolio website used to showcase my skills and projects experience.",
-    "projectDetail":"lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "projectDetail": "Every software developer needs a personal portfolio website to show themselves. Without it, who are you but a nameless ghost in the digital world?",
     "projectDate": "2024",
     "projectImages": [
       "../../../assets/projectImages/portfolio_modal.jpg"
