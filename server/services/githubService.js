@@ -42,7 +42,7 @@ async function fetchGitHubData() {
   `;
 
   const currentTime = new Date();
-  if (!lastRequestTime || (currentTime - lastRequestTime) > 2 * 60 * 1000) {
+  if (!lastRequestTime || (currentTime - lastRequestTime) > 2 * 1000) {
   const headers = {
       'Content-type': 'application/json',
       'Authorization': `Bearer ${process.env.GH_TOKEN}`,
