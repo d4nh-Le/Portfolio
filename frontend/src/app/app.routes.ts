@@ -7,8 +7,8 @@ import { ProjectContainerComponent } from './components/general-components/conta
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeContainerComponent },
-  { path: 'activities', component: RecentActivityComponent },
-  { path: 'projects', component: ProjectContainerComponent },
+  { path: 'recent-activities', component: RecentActivityComponent },
+  { path: 'recent-projects', component: ProjectContainerComponent },
 ];
 
 @NgModule({
