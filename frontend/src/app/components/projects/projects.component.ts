@@ -26,7 +26,7 @@ export class ProjectsComponent {
   }
 
   getData() {
-    this.http.get<any>('http://localhost:3000/projects')
+    this.http.get<any>('https://portfolio.danh-le.com/projects')
       .subscribe(
         (data: Project[]) => {
           this.results = data.map((project: any) => ({

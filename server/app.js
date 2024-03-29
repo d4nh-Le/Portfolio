@@ -12,9 +12,21 @@ const projects = require('./services/projectsService.js');
 
 app.use(cors());
 
-app.get('/leetcode', leetcode.leetcodeGetInfo);
-app.get('/github', github.githubGetInfo);
-app.get('/projects', projects.projectsGetDetails);
+function restrictAccess(req, res, next) {
+  const allowedOrigins = ['http://localhost:3000'];
+  const origin = req.headers.origin;
+  
+  if (!allowedOrigins.includes(origin)) {
+    console.log(origin);
+    return res.status(403).send('Access Denied');
+  }
+  
+  next();
+}
+
+app.get('/leetcode', restrictAccess, leetcode.leetcodeGetInfo);
+app.get('/github', restrictAccess, github.githubGetInfo);
+app.get('/projects', restrictAccess, projects.projectsGetDetails);
 
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
