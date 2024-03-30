@@ -17,19 +17,22 @@
 }
 
 .container {
-  padding: 120px 10px 0 200px;
+  padding: 120px 10px 0 170px;
 }
 
 
 .info-box-left {
   width: calc((100% - 30%) / 2);
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 45px;
 }
 
 .info-box-left svg {
   height: 100px;
   width: 100px;
+  padding-left: -5px;
+  margin-left: -10px;
+  margin-bottom: 5px;
 }
 
 .info-box-left hr {
@@ -37,6 +40,8 @@
   border: 1px solid #ffffff;
   text-align: left;
   margin-left: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .info-box-left .welcome-text {
@@ -48,16 +53,7 @@
 .info-box-left .welcome-description {
   color: #ffffff; 
   font-family: 'Noto Sans';
-  font-size: 20px;
-}
-
-.welcome-title {
-  color: #ffffff; 
-  font-family: 'Orbitron', sans-serif;
-  font-size: 70px;
-  font-weight: bold;
-  white-space: nowrap;
-  overflow: hidden;
+  font-size: 18px;
 }
 
 

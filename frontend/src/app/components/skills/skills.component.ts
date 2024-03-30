@@ -10,25 +10,6 @@ import { CommonModule } from '@angular/common';
   styleUrl: './skills.component.css'
 })
 export class SkillsComponent {
-  languages: string[] = [];
-  frameworks: string[] = [];
-  services: string[] = [];
-
-  constructor(private http: HttpClient) { }
-
-  ngOnInit() {
-    this.http.get('assets/skills.txt', { responseType: 'text' })
-      .subscribe(
-        data => {
-          const lines = data.split('\n');
-
-          this.languages = lines[0].split(',').map(skill => skill.trim());
-          this.frameworks = lines[1].split(',').map(skill => skill.trim());
-          this.services = lines[2].split(',').map(skill => skill.trim());
-        },
-        error => {
-          console.error('Error fetching skills:', error);
-        }
-      );
-  }
+  skills_description1st: string = "Programming languages and frameworks that I am proficient in, yet.";
+  skills_description2nd: string = "I am always eager to learn new technologies and improve my capabilities.";
 }
