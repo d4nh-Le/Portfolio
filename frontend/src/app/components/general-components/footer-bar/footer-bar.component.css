@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../../../../assets/fonts/Orbitron/static/Orbitron-Bold.ttf') format('truetype');
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #8AAAE5;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20% 0 20%;
+  }
+
+  .navbar ul li:first-of-type {
+    margin-left: auto;
+  }
+
+  svg {
+    height: 30px;
+    width: 30px;
+  }
+  
+  li {
+    float:right;
+    font-family: 'Orbitron';
+    font-size: 16px;
+    margin-right: 6px;
+    font-weight: 700;
+  }
+  
+  li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+  }
+  
+  ul .logo img{
+    width: 40px;
+    height: 40px;
+    margin-left: 100%;
+  }
+  

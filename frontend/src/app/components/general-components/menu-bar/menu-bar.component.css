@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Lato Bold 900';
-  src: url('../../../../assets/fonts/Lato/Lato-Bold.ttf') format('truetype');
+  font-family: 'Orbitron';
+  src: url('../../../../assets/fonts/Orbitron/static/Orbitron-Bold.ttf') format('truetype');
 }
 
 ul {
@@ -9,16 +9,20 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #8AAAE5;
-  height: 60px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding: 0 20% 0 20%;
 }
 
+.navbar ul li:first-of-type {
+  margin-left: auto;
+}
+
 li {
   float:right;
-  font-family: 'Lato Bold 900';
+  font-family: 'Orbitron';
   font-size: 22px;
   margin-right: 10px;
   font-weight: 900;
@@ -30,5 +34,10 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+ul .logo img{
+  width: 60px;
+  height: 60px;
 }
 

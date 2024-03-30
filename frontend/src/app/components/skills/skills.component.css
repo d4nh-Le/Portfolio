@@ -23,6 +23,7 @@
 
 .skills-box-right {
     /* width: calc((100% - 30%) / 2); */
+    padding: 15px 10px 0 120px;
     padding-top: 40px;
     padding-bottom: 45px;
 }
@@ -76,6 +77,12 @@
     justify-content: space-between; /* Optional: to distribute icons evenly across the row */
 }
 
+.icon-name {
+    color: #ffffff; 
+    font-family: 'Noto Sans';
+    font-size: 10px;
+    display: none;
+}
 
 
 /* ##############################EXTERNAL################### */
@@ -84,7 +91,6 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding: 15px 10px 0 120px;
   }
   
   .cards .red {
@@ -105,7 +111,7 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    height: 100px;
+    height: 120px;
     width: 450px;
     border-radius: 10px;
     color: white;
@@ -138,3 +144,6 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   }
   
+  .card:hover .icon-name {
+    display: block;
+  }
