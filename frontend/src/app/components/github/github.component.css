@@ -33,57 +33,67 @@
   }
 }
 
-.result-container {
-  --background: linear-gradient(to left, #1e1930 0%, #060513 100%);
-  width: 1000px;
-  height: 800px;
-  padding: 5px;
-  border-radius: 1rem;
-  overflow: visible;
-  background: var(--background);
-  position: relative;
-  z-index: 1;
- }
-
- .result-inner {
-  --color: #0d0c18;
-  background: var(--color);
-  color: var(--color);
-  width: 99%;
-  height: 98.8%;
-  overflow: visible;
-  border-radius: 0.7rem;
-  position: absolute;
- }
-
-.result-github-icon {
-  color: #c4c4c4;
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 15px;
-  margin-top: 15px;
-  margin-bottom: -20px;
+.github-container {
+  padding: 0 10% 0 20%;
+  overflow: hidden;
+  background-color: #00246bc0;
+  border-top: 1px solid rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
 }
 
-.result-github-title {
-  color: #ffffff;
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 10px;
-  margin-bottom: 41px;
-  font-size: 35px;
+.github-container .github-container-top {
+  padding: 20px 25% 20px 10%;
+}
+
+.github-container .github-container-bottom {
+  padding: 20px 30% 20px 10%;
+}
+
+.github-container-top .github-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.github-container-top .github-icon svg {
+  width: 70px;
+  height: 70px;
+  color: #ffffff; 
   font-family: 'Orbitron', sans-serif;
+  font-size: 30px;
 }
 
-.github-results {
+.github-container-top hr {
+  width: 200px;
+  border: 1px solid #ffffff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.github-container-top .github-title, .github-description {
+  color: #ffffff; 
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+.github-title {
+  font-size: 30px;
+}
+
+.github-description {
+  font-size: 18px;
+}
+
+.github-container-bottom .github-results {
   overflow-y: auto;
-  width: 97%;
-  height: 79%;
-  color: #c4c4c4;
-  padding-top: 30px;
-  margin-left: 13px;
-  border-top: 2px solid #1e1930;
-  border-bottom: 2px solid #1e1930;
+  width: 100%;
+  height: 800px;
+  color: #ffffff;
+  background-color:#8aaae5b6;
+  border-radius: 5px;
+  padding: 30px;
+  border: 3px solid #ffffff3f;
 }
 
 .github-results::-webkit-scrollbar {
@@ -91,13 +101,27 @@
 }
 
 .commit-group {
-  border: 1px solid #c4c4c4;
+  border: 1px solid #ffffff;
   border-radius: 5px;
   margin-bottom: 30px;
+  margin-top: 28px;
+}
+
+.github-progress-title {
+  color: #ffffff; 
+  font-family: 'Orbitron', sans-serif;
+  font-size: 24px;
+}
+
+.github-progress-separator {
+  width: 235px;
+  border: 1px solid #ffffff;
+  margin: 0;
+  margin-top: 5px;
 }
 
 .date-decoration {
-  border-left: 2px solid #c4c4c4;
+  border-left: 2px solid #ffffff;
   height: 31.1px;
   padding-left: 5px;
   margin-left: 20px;
@@ -105,15 +129,21 @@
   font-size: 12px;
 }
 
+.github-category-commit-date {
+  text-decoration: underline;
+}
+
 .date-header {
   font-size: 12px;
-  color: #0366d6;
+  color: #ffffff;
   padding-top: 8px;
 }
 
 .commit {
-  padding: 10px;
   border-radius: 6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
 
 .repository {
@@ -122,29 +152,39 @@
   margin-bottom: 5px;
 }
 
+.github-category-title {
+  font-weight: bold;
+  font-size: 15px;
+}
+
 .message {
   margin-bottom: 5px;
   word-wrap: break-word;
 }
 
 .date {
-  color: #586069;
   font-size: 12px;
 }
 
-.commit-divider {
-  width: 110%;
-  margin-left: -10px;
+
+.commit .commit-divider {
+  width: 100%;
+  margin-left: -5px;
   margin-bottom: -20px;
+  color: #ffffff;
 }
 
-.button-name {
-  margin-left: 437px;
-  margin-top: 15px;
+.load-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.github-results .button-name {
   align-items: center;
   background-color: #fcfcfd00;
-  border: 2px solid #c4c4c4;;
-  color: #c4c4c4;;
+  border: 2px solid #ffffff;
+  color: #ffffff;;
   box-sizing: border-box;
   cursor: pointer;
   display: inline-flex;
@@ -167,5 +207,5 @@
   white-space: nowrap;
   will-change: box-shadow,transform;
   font-size: 18px;
-  border-radius: 5px;
+  border-radius: 20px;
  }
