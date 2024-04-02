@@ -13,7 +13,7 @@ const projects = require('./services/projectsService.js');
 app.use(cors());
 
 function restrictAccess(req, res, next) {
-  const allowedOrigins = ['http://localhost:3000'];
+  const allowedOrigins = ['http://localhost:4200'];
   const origin = req.headers.origin;
   
   if (!allowedOrigins.includes(origin)) {

@@ -16,6 +16,14 @@
     display: flex;
 }
 
+.role-emphasis {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #EA738D;
+  padding-left: 3px;
+}
+
 .container {
   padding: 120px 10px 0 170px;
 }

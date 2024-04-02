@@ -3,6 +3,75 @@
   src: url('../../../assets/fonts/Orbitron/static/Orbitron-Bold.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../../../assets/fonts/Noto_Sans/static/NotoSans-Regular.ttf') format('truetype');
+}
+
+.role-emphasis {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #EA738D;
+  padding-left: 3px;
+}
+
+.leetcode-container {
+  padding: 0 10% 0 20%;
+  overflow: hidden;
+  background-color: #8AAAE5;
+  border-top: 1px solid rgb(255, 255, 255);
+  display: flex;
+}
+
+.result-leetcode-results::-webkit-scrollbar {
+  display: none;
+}
+
+.leetcode-left {
+  width: calc((100% - 30%) / 2);
+  padding-top: 40px;
+  padding-bottom: 45px;
+}
+
+.leetcode-left svg {
+  height: 100px;
+  width: 100px;
+  padding-left: -5px;
+  margin-left: -10px;
+  margin-bottom: 5px;
+}
+
+.leetcode-left hr {
+  width: 50px;
+  border: 1px solid #ffffff;
+  text-align: left;
+  margin-left: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.leetcode-left .welcome-text {
+  color: #ffffff; 
+  font-family: 'Orbitron', sans-serif;
+  font-size: 30px;
+}
+
+.leetcode-left .welcome-description {
+  color: #ffffff; 
+  font-family: 'Noto Sans';
+  font-size: 18px;
+}
+ 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 a {
   text-decoration: none;
   color: #f7ba2b; 
@@ -16,116 +85,65 @@ a:visited {
   color: #24e75e; 
 }
 
-.result-container {
-  --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
-  width: 500px;
-  height: 800px;
-  padding: 5px;
-  border-radius: 1rem;
-  overflow: visible;
-  background: var(--background);
-  position: relative;
-  z-index: 1;
- }
-
- 
- .result-inner {
-  --color: #181818;
-  background: var(--color);
-  color: var(--color);
-  width: 98%;
-  height: 98.8%;
-  overflow: visible;
-  border-radius: .7rem;
-  position: absolute;
- }
-
-.result-leetcode-icon {
-  color: #f7ba2b;
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 15px;
-  margin-top: 15px;
-  margin-bottom: -20px;
+.leetcode-right {
+  padding: 15px 10px 0 120px;
+  padding-top: 40px;
+  padding-bottom: 45px;
 }
 
-.result-leetcode-title {
-  color: #f7ba2b;
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 10px;
-  margin-bottom: 30px;
-  font-size: 35px;
-  font-family: 'Orbitron', sans-serif;
+.result-inner {
+  color: #ffffff;
+  background-color:#00246bc0;
+  border-radius: 5px;
+  padding: 30px;
+  border: 3px solid #ffffff3f;
 }
 
 .result-leetcode-results {
-  overflow-x: hidden;
-  overflow-y: auto;
-  width: 100%;
-  height: 83%;
-}
 
-.result-leetcode-results::-webkit-scrollbar {
-  display: none;
-}
- 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .result-questions {
   background-color: inherit; 
-  color: aliceblue;
-  /* margin-left: 15px; */
-  padding-left: 15px;
-  padding-right: 5px;
-  margin-top: 35px;
+  /* color: aliceblue; */
   animation: fadeIn 0.5s ease-in-out;
 }
 
 .result-questions:nth-child(even) {
-  background-color: #7979793b;
+  /* background-color: #7979793b; */
   border-radius: 2px;
   padding-top: 0.5px;
   padding-bottom: 0.5px;
 }
 
 .button-name {
-    margin-left: 187px;
-    margin-top: 15px;
-    align-items: center;
-    background-color: #fcfcfd00;
-    border: 2px solid rgb(255, 196, 0);
-    color: rgb(255, 196, 0);
-    box-sizing: border-box;
-    cursor: pointer;
-    display: inline-flex;
-    font-family: "JetBrains Mono",monospace;
-    height: 32px;
-    width: 120px;
-    justify-content: center;
-    line-height: 1;
-    list-style: none;
-    overflow: hidden;
-    padding-left: 16px;
-    padding-right: 16px;
-    position: relative;
-    text-align: left;
-    text-decoration: none;
-    transition: box-shadow .15s,transform .15s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
-    will-change: box-shadow,transform;
-    font-size: 18px;
-    border-radius: 5px;
+  align-items: center;
+  background-color: #fcfcfd00;
+  border: 2px solid #ffffff;
+  color: #ffffff;;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 32px;
+  width: 120px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  border-radius: 20px;
    }
 
 

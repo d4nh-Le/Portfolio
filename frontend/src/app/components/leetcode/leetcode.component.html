@@ -1,14 +1,28 @@
-<div *ngIf="(results)" class="result-container">
-  <div class="result-inner">
-    <div class="result-leetcode-icon"><svg width="50px" height="50px" viewBox="0 0 24 24"><path fill="#f7ba2b" d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104a5.35 5.35 0 0 0-.125.513a5.527 5.527 0 0 0 .062 2.362a5.83 5.83 0 0 0 .349 1.017a5.938 5.938 0 0 0 1.271 1.818l4.277 4.193l.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019l-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523a2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0m-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382a1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382a1.38 1.38 0 0 0-1.38-1.382z"/></svg><span class="result-leetcode-title">LEETCODE</span></div>
-    <div class="result-leetcode-results">
-  <div *ngFor="let result of results | slice:0:displayedResults" class="result-questions">
-    <p>Problem: {{ result.title }} / <a href="https://leetcode.com/problems/{{result.titleSlug}}/description/" target="_blank">at Leetcode</a></p>
-    <p>Language: {{ result.language }}</p>
-    <p>Status: <span class="leetcode-question-status">{{result.statusDisplay}}</span></p>
-    <p class="result-date">Date: {{ result.Date | date }} ({{result.timestamp}}).</p>
+<div *ngIf="(results)" class="leetcode-container">
+
+  <div class="leetcode-left">
+    <div class="welcome-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6m12 5h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16m-10-7.34V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22m7-7.34V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0z"/></g></svg>
+    </div>
+    <div class="welcome-text">Self-study and Coding Challenges</div>
+    <hr>
+    <div class="welcome-description">I often apply <span class="role-emphasis"> Project-based learning (PBL) </span>technique to learn new knowledge and technologies. This approach allows me to start projects with <span class="role-emphasis"> curiosity and enthusiasm </span>. A big advantage of this technique is allowing me to divide a big problem into smaller pieces, and everytime I solve a smaller problem, it brings me closer to the big goal. This technique has helped me learn and understand a lot of knowledge, and most importantly, <span class="role-emphasis"> having fun learning to code </span>.</div>
+    <br>
+    <div class="welcome-description">Sometimes, I also <span class="role-emphasis"> enjoy solving coding challenges </span>. These puzzles are a fun way to practice and become a better software developer.</div>
+    </div>
+
+    <div class="leetcode-right">
+      <div class="result-inner">
+        <div class="result-leetcode-results">
+      <div *ngFor="let result of results | slice:0:displayedResults" class="result-questions">
+        <p>Problem: {{ result.title }} / <a href="https://leetcode.com/problems/{{result.titleSlug}}/description/" target="_blank">at Leetcode</a></p>
+        <p>Language: {{ result.language }}</p>
+        <p>Status: <span class="leetcode-question-status">{{result.statusDisplay}}</span></p>
+        <p class="result-date">Date: {{ result.Date | date }} ({{result.timestamp}}).</p>
+      </div>
+    </div>
+      <button *ngIf="results.length > displayedResults" (click)="displayedResults = displayedResults + 3" class="button-name">See more</button>
+    </div>
+    </div>
+
   </div>
-</div>
-  <button *ngIf="results.length > displayedResults" (click)="displayedResults = displayedResults + 3" class="button-name">See more</button>
-</div>
-</div>

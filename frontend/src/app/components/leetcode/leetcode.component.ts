@@ -24,7 +24,7 @@ export class LeetcodeComponent implements OnInit {
   }
 
   getData() {
-    this.http.get<any>('https://portfolio.danh-le.com/leetcode')
+    this.http.get<any>('http://localhost:3000/leetcode')
       .subscribe(
         data => {
           this.results = data.map((item: { title: string; titleSlug: string; timestamp: number; statusDisplay: string; lang: string; formattedDate: string; }) => ({
