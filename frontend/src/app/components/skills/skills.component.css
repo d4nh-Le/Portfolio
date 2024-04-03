@@ -113,7 +113,7 @@
     text-align: center;
     height: 120px;
     width: 450px;
-    border-radius: 10px;
+    border-radius: 5px;
     color: white;
     cursor: pointer;
     transition: 400ms transform, 400ms box-shadow, 400ms background-color;

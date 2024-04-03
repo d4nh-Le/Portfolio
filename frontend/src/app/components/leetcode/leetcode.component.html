@@ -11,18 +11,19 @@
     <div class="welcome-description">Sometimes, I also <span class="role-emphasis"> enjoy solving coding challenges </span>. These puzzles are a fun way to practice and become a better software developer.</div>
     </div>
 
+
     <div class="leetcode-right">
       <div class="result-inner">
         <div class="result-leetcode-results">
       <div *ngFor="let result of results | slice:0:displayedResults" class="result-questions">
-        <p>Problem: {{ result.title }} / <a href="https://leetcode.com/problems/{{result.titleSlug}}/description/" target="_blank">at Leetcode</a></p>
-        <p>Language: {{ result.language }}</p>
-        <p>Status: <span class="leetcode-question-status">{{result.statusDisplay}}</span></p>
-        <p class="result-date">Date: {{ result.Date | date }} ({{result.timestamp}}).</p>
+        <p><span class="leetcode-header">Problem: </span>{{ result.title }} / <a href="https://leetcode.com/problems/{{result.titleSlug}}/description/" target="_blank">at Leetcode</a></p>
+        <p><span class="leetcode-header">Language: </span>{{ result.language }}</p>
+        <p><span class="leetcode-header">Status: </span><span class="leetcode-question-status">{{result.statusDisplay}}</span></p>
+        <p class="result-date"><span class="leetcode-header">Date: </span>{{ result.Date | date }} ({{result.timestamp}}).</p>
       </div>
     </div>
-      <button *ngIf="results.length > displayedResults" (click)="displayedResults = displayedResults + 3" class="button-name">See more</button>
-    </div>
+      <div class="load-button"><button *ngIf="results.length > displayedResults" (click)="displayedResults = displayedResults + 3" class="button-name">See more</button></div>
     </div>
 
   </div>
+
