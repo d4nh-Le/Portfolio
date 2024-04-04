@@ -4,6 +4,7 @@ import { OnInit } from '@angular/core';
 import { Submission } from './leetcode.submissionModel.component';  
 import { TimeAgoService } from '../service-components/time-ago.service';
 import { CommonModule } from '@angular/common';
+import { retryWhen, delay, take } from 'rxjs/operators';
 
 @Component({
   selector: 'app-leetcode',
@@ -25,7 +26,12 @@ export class LeetcodeComponent implements OnInit {
 
   getData() {
     this.http.get<any>('http://localhost:3000/leetcode')
-      .subscribe(
+    .pipe(
+      retryWhen(errors => errors.pipe(
+        delay(3000), 
+        take(3) 
+      ))
+    ).subscribe(
         data => {
           this.results = data.map((item: { title: string; titleSlug: string; timestamp: number; statusDisplay: string; lang: string; formattedDate: string; }) => ({
             title: item.title,

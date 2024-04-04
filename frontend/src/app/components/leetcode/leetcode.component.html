@@ -15,6 +15,14 @@
     <div class="leetcode-right">
       <div class="result-inner">
         <div class="result-leetcode-results">
+          <!-- LOADING STATE -->
+      <div class="loading-state">
+        <div *ngIf="loadingState" class="loading-message">Loading Leetcode data...</div>
+  
+        <div *ngIf="(!results && !loadingState)" class="error-message">
+        Error fetching data.
+        </div>
+      </div>
       <div *ngFor="let result of results | slice:0:displayedResults" class="result-questions">
         <p><span class="leetcode-header">Problem: </span>{{ result.title }} / <a href="https://leetcode.com/problems/{{result.titleSlug}}/description/" target="_blank">at Leetcode</a></p>
         <p><span class="leetcode-header">Language: </span>{{ result.language }}</p>

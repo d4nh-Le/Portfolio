@@ -14,5 +14,21 @@
       "../../../assets/projectImages/portfolio_modal.jpg"
     ],
     "projectLink": "https://github.com/d4nh-Le/portfolio"
+  },
+  {
+    "projectTitle": "Personal Portfolio2",
+    "projectAuthors": "Danh Le",
+    "technologies" : [
+      "angular",
+      "nodejs",
+      "awsec2"
+    ],
+    "projectDescription": "A personal portfolio website used to showcase my skills and projects experience.",
+    "projectDetail": "Every software developer needs a personal portfolio website to show themselves. Without it, who are you but a nameless ghost in the digital world?",
+    "projectDate": "2024",
+    "projectImages": [
+      "../../../assets/projectImages/portfolio_modal.jpg"
+    ],
+    "projectLink": "https://github.com/d4nh-Le/portfolio"
   }
 ]
