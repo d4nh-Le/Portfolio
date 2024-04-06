@@ -1,31 +1,13 @@
 [
   {
-    "projectTitle": "Personal Portfolio",
+    "projectTitle": "LeCong's Welding Machines and Services",
     "projectAuthors": "Danh Le",
     "technologies" : [
-      "angular",
-      "nodejs",
-      "awsec2"
+      "react",
+      "nodejs"
     ],
-    "projectDescription": "A personal portfolio website used to showcase my skills and projects experience.",
-    "projectDetail": "Every software developer needs a personal portfolio website to show themselves. Without it, who are you but a nameless ghost in the digital world?",
-    "projectDate": "2024",
-    "projectImages": [
-      "../../../assets/projectImages/portfolio_modal.jpg"
-    ],
-    "projectLink": "https://github.com/d4nh-Le/portfolio",
-    "projectStatus": "complete"
-  },
-  {
-    "projectTitle": "Personal Portfolio2",
-    "projectAuthors": "Danh Le",
-    "technologies" : [
-      "angular",
-      "nodejs",
-      "awsec2"
-    ],
-    "projectDescription": "A personal portfolio website used to showcase my skills and projects experience.",
-    "projectDetail": "Every software developer needs a personal portfolio website to show themselves. Without it, who are you but a nameless ghost in the digital world?",
+    "projectDescription": "Landing store page for LeCong, a company specialized in welding machines, tools and equipments.",
+    "projectDetail": "Landing store page for LeCong, a company specialized in welding machines, tools and equipments.",
     "projectDate": "2024",
     "projectImages": [
       "../../../assets/projectImages/portfolio_modal.jpg"
@@ -34,20 +16,38 @@
     "projectStatus": "tobepublished"
   },
   {
-    "projectTitle": "Personal Portfolio3",
+    "projectTitle": "Data Scraper",
     "projectAuthors": "Danh Le",
     "technologies" : [
       "angular",
       "nodejs",
       "awsec2"
     ],
-    "projectDescription": "A personal portfolio website used to showcase my skills and projects experience.",
-    "projectDetail": "Every software developer needs a personal portfolio website to show themselves. Without it, who are you but a nameless ghost in the digital world?",
+    "projectDescription": "An efficient web scraper application to collect data and contents from online websites and pages, convert them into JSON and deliver these through API endpoints.",
+    "projectDetail": "An efficient web scraper application to collect data and contents from online websites and pages, convert them into JSON and deliver these through API endpoints.",
     "projectDate": "2024",
     "projectImages": [
       "../../../assets/projectImages/portfolio_modal.jpg"
     ],
     "projectLink": "https://github.com/d4nh-Le/portfolio",
-    "projectStatus": "ongoing"
+    "projectStatus": "tobepublished"
+  },
+  {
+    "projectTitle": "Personal Portfolio",
+    "projectAuthors": "Danh Le",
+    "technologies" : [
+      "angular",
+      "nodejs",
+      "express",
+      "awsec2"
+    ],
+    "projectDescription": "A personal portfolio website used to showcase my skills and projects experience.",
+    "projectDetail": "A personal portfolio website used to showcase my skills and projects experience. A personal portfolio website used to showcase my skills and projects experience.",
+    "projectDate": "2024",
+    "projectImages": [
+      "../../../assets/projectImages/portfolio_modal.jpg"
+    ],
+    "projectLink": "https://github.com/d4nh-Le/portfolio",
+    "projectStatus": "complete"
   }
 ]
