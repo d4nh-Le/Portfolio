@@ -30,6 +30,20 @@
   padding-top: 40px;
 }
 
+.project-publish {
+  color: #ffffff; 
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #EA738D;
+  padding: 3px 5px 3px 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  overflow: auto; 
+  display: inline-block; /* Makes the element behave like an inline element */
+}
+
 
 .project-left hr {
   width: 50px;
@@ -44,6 +58,7 @@
   color: #ffffff; 
   font-family: 'Orbitron', sans-serif;
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .project-left .project-header {
@@ -99,9 +114,10 @@
   transition: filter 0.3s ease;
 }
 
-.project-image img:hover {
-  filter: brightness(1.2);
+.thumbnail-status {
+  filter: blur(5px);
 }
+
 
 @media (max-width: 768px) {
     .project-thumbnail {

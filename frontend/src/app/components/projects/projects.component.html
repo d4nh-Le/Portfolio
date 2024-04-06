@@ -1,31 +1,28 @@
-
-
 <div class="all-projects">
-<div *ngIf="results">
-
+  <div *ngIf="results">
     <div *ngFor="let result of results" class="project-thumbnail">
+      <div class="project-left">
 
-    <div class="project-left">
-      <div class="project-type">Project</div>
-      <div class="project-header">{{result.title }}s</div>
-      <hr class="deco-line">
-      <div class="project-description">{{ result.description }}</div>
-      <div class="project-open"><button class="project-open-button" (click)="openModal(result, $event)"><p class="project-open-button-text">View full project detail</p></button></div>
-    </div>
+        <div *ngIf="result.status == 'tobepublished'" class="project-publish">Publish Soon</div>
+        <div *ngIf="result.status == 'ongoing'" class="project-publish">On Going</div>
 
-    <div class="project-right">
-      <div class="project-image">
-        <img [src]="result.images[0]" alt="Project Image" (click)="openModal(result, $event)">
+        <div class="project-type">Project</div>
+        <div class="project-header">{{result.title}}</div>
+        <hr class="deco-line">
+        <div class="project-description">{{ result.description }}</div>
+        <div class="project-open">
+          <button class="project-open-button" *ngIf="result.status == 'complete'" (click)="openModal(result, $event)">
+            <p class="project-open-button-text">View full project detail</p>
+          </button>
+        </div>
       </div>
 
+     
+      <div class="project-right">
+        <div class="project-image">
+          <img *ngIf="result.status == 'complete'" [src]="result.images[0]" alt="Project Image" (click)="openModal(result, $event)">
+          <img *ngIf="result.status != 'complete'" class="thumbnail-status" [src]="result.images[0]" alt="Project Image"></div>
+        </div>
+    </div>
   </div>
 </div>
-
-
-</div> 
-</div> 
-
-
-
-<!--  <div class="card__img"><img [src]="result.images[0]" alt="Project Image"></div> -->
-

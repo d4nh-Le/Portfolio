@@ -29,3 +29,5 @@ exports.projectsGetDetails = async (req, res) => {
         res.status(500).json({ error: 'Error fetching Leetcode data', details: error.message });
     }
   };
+
+  // Project status: complete/tobepublished/ongoing

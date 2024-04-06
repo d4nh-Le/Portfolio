@@ -7,4 +7,5 @@ export interface Project {
     date: string;
     images: any;
     url: string;
+    status:string;
   }
