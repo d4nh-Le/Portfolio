@@ -34,9 +34,9 @@
       <div *ngFor="let result of results | slice:0:displayedResults " class="commit-group">
           <div class="date-decoration"><h2 class="date-header">Commits on: <span class="github-category-commit-date">{{ result.date }}</span> </h2></div>
           <div *ngFor="let commit of result.commits" class="commit">
-            <p class="repository typing-animation">Repository: {{ commit.repository.owner }} / {{ commit.repository.name }}</p>
-            <p class="typing-animation"><span class="github-category-title">Message: </span> {{ commit.commitMessage }}</p>
-            <p class="date typing-animation"><span class="github-category-title">Date: </span>{{ commit.commitDate | date }}, ({{ commit.commitAgo }})</p>
+            <p class="repository">Repository: {{ commit.repository.owner }} / {{ commit.repository.name }}</p>
+            <p class="commit-message"><span class="github-category-title">Message: </span> {{ commit.commitMessage }}</p>
+            <p class="date"><span class="github-category-title">Date: </span>{{ commit.commitDate | date }}, ({{ commit.commitAgo }})</p>
             <div class="commit-divider" *ngIf="result.commits.length > 1 && commit !== result.commits[result.commits.length - 1]"><hr></div>
           </div>
         </div>
