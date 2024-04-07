@@ -15,11 +15,16 @@
                 <div class="modal-title">{{ results.title }}</div>
 
                 <div class="modal-sec2"></div>
-                <div class="modal-detail">{{ results.detail }}</div>
+                <div class="modal-detail">
+                    <div *ngFor="let detail of results.detail">
+                        <p>{{ detail.text }}</p>
+                        <img *ngIf="detail.image" [src]="detail.image" alt="Project Image">
+                      </div>
+                  </div>
                 </div>
 
 
-                <div class="modal-sec3">
+                <!-- <div class="modal-sec3">
                 <div><div *ngIf="results.images"> <div *ngFor="let image of results.images">
                             <ng-container *ngIf="imageExists(image)">
                                 <img [src]="image" alt="Project Image" class="modal-image">
@@ -27,7 +32,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="modal-close">
                 <button (click)="closeModal()">X</button>
             </div>

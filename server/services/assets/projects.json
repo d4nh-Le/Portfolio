@@ -1,38 +1,5 @@
 [
   {
-    "projectTitle": "LeCong's Welding Machines and Services",
-    "projectAuthors": "Danh Le",
-    "technologies" : [
-      "react",
-      "nodejs"
-    ],
-    "projectDescription": "Landing store page for LeCong, a company specialized in welding machines, tools and equipments.",
-    "projectDetail": "Landing store page for LeCong, a company specialized in welding machines, tools and equipments.",
-    "projectDate": "2024",
-    "projectImages": [
-      "../../../assets/projectImages/portfolio_modal.jpg"
-    ],
-    "projectLink": "https://github.com/d4nh-Le/portfolio",
-    "projectStatus": "tobepublished"
-  },
-  {
-    "projectTitle": "Data Scraper",
-    "projectAuthors": "Danh Le",
-    "technologies" : [
-      "angular",
-      "nodejs",
-      "awsec2"
-    ],
-    "projectDescription": "An efficient web scraper application to collect data and contents from online websites and pages, convert them into JSON and deliver these through API endpoints.",
-    "projectDetail": "An efficient web scraper application to collect data and contents from online websites and pages, convert them into JSON and deliver these through API endpoints.",
-    "projectDate": "2024",
-    "projectImages": [
-      "../../../assets/projectImages/portfolio_modal.jpg"
-    ],
-    "projectLink": "https://github.com/d4nh-Le/portfolio",
-    "projectStatus": "tobepublished"
-  },
-  {
     "projectTitle": "Personal Portfolio",
     "projectAuthors": "Danh Le",
     "technologies" : [
@@ -42,11 +9,24 @@
       "awsec2"
     ],
     "projectDescription": "A personal portfolio website used to showcase my skills and projects experience.",
-    "projectDetail": "A personal portfolio website used to showcase my skills and projects experience. A personal portfolio website used to showcase my skills and projects experience.",
-    "projectDate": "2024",
-    "projectImages": [
-      "../../../assets/projectImages/portfolio_modal.jpg"
+    "projectDetail": [
+      {
+        "paragraph": "1A personal portfolio website used to showcase my skills and projects experience.",
+        "image": "../../../assets/projectImages/portfolio_modal.jpg"
+      },
+      {
+        "paragraph": "2A personal portfolio website used to showcase my skills and projects experience."
+      },
+      {
+        "paragraph": "3A personal portfolio website used to showcase my skills and projects experience.",
+        "image": "../../../assets/projectImages/portfolio_modal.jpg"
+      },
+      {
+        "paragraph": "4A personal portfolio website used to showcase my skills and projects experience."
+      }
+
     ],
+    "projectDate": "2024",
     "projectLink": "https://github.com/d4nh-Le/portfolio",
     "projectStatus": "complete"
   }

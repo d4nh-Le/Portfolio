@@ -95,6 +95,15 @@
     margin-bottom: 20px;
 }
 
+.modal-detail img {
+    width: 40px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-right: 10px;
+
+}
+
 .modal-sec3 img {
     width: 40px;
     height: 60px;

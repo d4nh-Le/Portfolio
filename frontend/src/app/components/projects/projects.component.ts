@@ -34,7 +34,10 @@ export class ProjectsComponent {
             author: project.projectAuthors,
             technologies: project.technologies,
             description: project.projectDescription,
-            detail: project.projectDetail,
+            detail: project.projectDetail.map((detail: any) => ({
+              text: detail.paragraph,
+              image: detail.image
+            })),
             date: project.projectDate,
             images: project.projectImages,
             url: project.projectLink,

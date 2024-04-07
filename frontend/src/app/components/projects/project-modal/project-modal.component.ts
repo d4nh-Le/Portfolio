@@ -42,4 +42,9 @@ export class ProjectModalComponent {
     http.send();
     return http.status !== 404;
   }
+
+  logAndReturn(value: any): any {
+    console.log(value);
+    return value;
+  }
 }
