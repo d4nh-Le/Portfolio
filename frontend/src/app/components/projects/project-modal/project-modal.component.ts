@@ -15,6 +15,7 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 })
 export class ProjectModalComponent {
   modalIcons: any = "";
+  showAllDetails = false;
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public results: any,

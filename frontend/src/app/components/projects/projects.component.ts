@@ -36,7 +36,8 @@ export class ProjectsComponent {
             description: project.projectDescription,
             detail: project.projectDetail.map((detail: any) => ({
               text: detail.paragraph,
-              image: detail.image
+              image: detail.image,
+              line: detail.line
             })),
             date: project.projectDate,
             images: project.projectImages,

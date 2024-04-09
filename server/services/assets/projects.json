@@ -11,18 +11,48 @@
     "projectDescription": "A personal portfolio website used to showcase my skills and projects experience.",
     "projectDetail": [
       {
-        "paragraph": "1A personal portfolio website used to showcase my skills and projects experience.",
-        "image": "../../../assets/projectImages/portfolio_modal.jpg"
+        "paragraph": "Almost half a year ago, I finally graduated from Southern Alberta Institute of Technology (SAIT), after two years taking the diploma program focused on Software Development. Similar to all the freshly graduates, I started building my resumes and drafting cover letters, with the hope of finding a company in a short time to kickstart my career as a junior software developer."
       },
       {
-        "paragraph": "2A personal portfolio website used to showcase my skills and projects experience."
+        "paragraph": "I started going through sections that one could normally find in a resume - Introduction, Education, Skills. However, when I stumbled upon Experience, I stopped for a second. As a fresh graduate from college, I have almost no real industry experience, compared to other software developers who graduated earlier before me, those who have had real software jobs or even those self-taught. They all have something to show for, to introduce themselves as a software developer."
       },
       {
-        "paragraph": "3A personal portfolio website used to showcase my skills and projects experience.",
-        "image": "../../../assets/projectImages/portfolio_modal.jpg"
+        "paragraph": "At the time, my closest to an experience was the final project before graduating from college. Then, a thought came to my mind: “Now, for example, even if I really do have an adequate amount of experience, how could anybody know what I do?” That thought was the first spark to give me an idea of building a portfolio website, to stand out and to showcase my work and experience.",
+        "line": true
       },
       {
-        "paragraph": "4A personal portfolio website used to showcase my skills and projects experience."
+        "paragraph": "That night, I sat down and started to brainstorm ideas for a portfolio website. What would be included, what functionalities I want it to have, all in all a website that would showcase my projects, my skills, and most importantly, showcase who I am as a person. I did not want a regular website that only had my information and some of the projects I have worked on. Apart from those elements, I wanted my website to record my activities of what I did, what projects I was currently working on and what stories were behind them (like a blog)."
+      },
+      {
+        "paragraph": "After a couple of weeks, while working and building the website at the same time, I have finally finished and deployed the first prototype website. The website includes many ideas that I have originally thought about. Even though I was proud of it, because it was one of many first projects I worked on, it lacked many aspects of a normal website one would use. For example, the designs were uneven, the APIs were insecure, and the website was not even mobile friendly.", 
+        "line": true,
+        "image": "../../../assets/projectImages/portfolio/old-port.jpg"
+      },
+      {
+        "paragraph": "I gained a little more confidence and started to be eager to apply for some jobs. I meticulously drafted my resumes and cover letters and started to find companies to apply to. However, after a few attempts, all of my applications were never responded back. In the period of 2023 - 2024, tech jobs experienced a lot of lay-offs, due to economies and oversaturation of software developers and software engineers. Even those who had lots of experience within the fields also struggled."
+      },
+      {
+        "paragraph": "While looking at the picture of the average situation, I was aware of the difficulty of the situation. However, I asked myself if there was something I could do to improve my chances. After analyzing a little bit, I discovered that while there were visitors who visited my prototype portfolio websites, I did not get any calls back. It was a wake up alarm for me to investigate.",
+        "line": true
+      },
+      {
+        "paragraph": "At the time of writing this post, looking back, even though I was proud of my creation. It lacked a major aspect of any websites, applications or product: User Interface (UI) and User Experience (UX). My prototype website, while having many flashy and complicated designs and animations, a visitor who comes to my website would not feel “friendly”. When a user visits a page, such as a news website or a shopping page of a brand, one often would not be consciously aware of the designs of the website. They would only care about the contents and what the website was about. All of the aspects of navigations, elements and designs would be perceived subconsciously. Therefore, I found my first lessons:"
+      },
+      {
+        "paragraph": "- The UX/UI has not done a good job if the regular users notice the design of a product."
+      },
+      {
+        "paragraph": "After that simple realization, I started to dive into the field of UX/UI. While not fully focused and specialized UX/UI like many graduates, I applied a few principles that I think would improve my website. I adjusted the page for simplicity and user-friendliness. At the same time, I also upgraded some aspects of the website such as security and performance. A new version of my portfolio website was deployed.",
+        "line": true
+      },
+      {
+        "paragraph": "While there are not any studies or reports that prove that in this way, my portfolio would be more simple or better, or would attract more visitors or potential employers, I believe this newer version works better. The evidence is that one I showed one of my friends about my portfolio website, one of their responses was: “Why is your website which shows to your employers so simple, even I can do it”."
+      },
+      {
+        "paragraph": "At that moment, a subtle feeling of happiness came to me. I have designed, created and deployed an idea I had. After many attempts, I made it better step-by-step along the way and learned a few valuable lessons. That response from my friend let me know I was in the right direction."
+      },
+      {
+        "paragraph": "“The ultimate sophistication is simplicity” - Leonardo da Vinci."
       }
 
     ],

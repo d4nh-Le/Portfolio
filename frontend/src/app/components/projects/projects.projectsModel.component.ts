@@ -3,7 +3,7 @@ export interface Project {
   author: any;
   technologies: any;
   description: string;
-  detail: Array<{ text: string, image: string | null }>;
+  detail: Array<{ text: string, image: string | null , line: boolean}>;
   date: string;
   url: string;
   status: string;
