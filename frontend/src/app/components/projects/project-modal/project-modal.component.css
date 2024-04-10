@@ -122,18 +122,53 @@ filter: brightness(1.2);
     line-height: 1.5;
 }
 
+.header-thumbnail img {
+    height: 500px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
 .modal-detail {
     font-size: 17px;
     margin-bottom: 20px;
 }
 
 .modal-detail img {
-    width: 40px;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 25px;
-    margin-right: 10px;
+    width: 700px;
+    height: 400px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
+.modal-technical {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    font-family: 'Orbitron';
+    padding-top: 10px;
+
+}
+
+.modal-link {
+    padding-left: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.modal-link a:visited {
+    color: inherit;
+  }
+
+.modal-link a:hover {
+    color: #cf7770;
 }
 
 .modal-close {

@@ -32,6 +32,7 @@ export class ProjectsComponent {
           this.results = data.map((project: any) => ({
             title: project.projectTitle,
             author: project.projectAuthors,
+            thumbnail: project.projectThumbnail,
             technologies: project.technologies,
             description: project.projectDescription,
             detail: project.projectDetail.map((detail: any) => ({

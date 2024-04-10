@@ -20,8 +20,8 @@
      
       <div class="project-right">
         <div class="project-image">
-            <img *ngIf="result.status == 'complete'" [src]="result.detail[0].image" alt="Project Image" (click)="openModal(result, $event)">
-          <img *ngIf="result.status != 'complete'" class="thumbnail-status" [src]="result.detail[0].image" alt="Project Image"></div>
+            <img *ngIf="result.status == 'complete'" [src]="result.thumbnail" alt="Project Image" (click)="openModal(result, $event)">
+          <img *ngIf="result.status != 'complete'" class="thumbnail-status" [src]="result.thumbnail" alt="Project Image"></div>
         </div>
     </div>
   </div>
