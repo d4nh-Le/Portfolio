@@ -2,14 +2,14 @@
   {
     "projectTitle": "LeCong's Welding Machines and Services",
     "projectAuthors": "Danh Le",
-    "projectThumbnail": "../../../assets/projectImages/portfolio/headerimage.jpg",
+    "projectThumbnail": "../../../assets/projectImages/congwelding/congweldingB.jpg",
     "technologies" : [
       "angular",
       "nodejs",
       "express",
       "awsec2"
     ],
-    "projectDescription": "Landing store page for LeCong, a company specialized in welding machines, tools and equipments.",
+    "projectDescription": "Landing store page for LeCong, a company specialized in welding machines, tools and equipments. The website showcase the business products, equipments and services.",
     "projectDetail": [
       {
         "paragraph": "Almost half a year ago, I finally graduated from Southern Alberta Institute of Technology (SAIT), after two years taking the diploma program focused on Software Development. Similar to all the freshly graduates, I started building my resumes and drafting cover letters, with the hope of finding a company in a short time to kickstart my career as a junior software developer."
@@ -61,16 +61,16 @@
     "projectStatus": "tobepublished"
   },
   {
-    "projectTitle": "Reviews Data Scraper",
+    "projectTitle": "Reviews.json",
     "projectAuthors": "Danh Le",
-    "projectThumbnail": "../../../assets/projectImages/portfolio/headerimage.jpg",
+    "projectThumbnail": "../../../assets/projectImages/reviewjson/reviewjson.jpg",
     "technologies" : [
       "angular",
       "nodejs",
       "express",
       "awsec2"
     ],
-    "projectDescription": "An efficient web scraper application to collect data and contents from online websites and pages, convert them into JSON and deliver these through API endpoints.",
+    "projectDescription": "An efficient web scraper application to collect ratings and reviews from various businesses page, convert them into JSON with the option of deliver them through APIs.",
     "projectDetail": [
       {
         "paragraph": "Almost half a year ago, I finally graduated from Southern Alberta Institute of Technology (SAIT), after two years taking the diploma program focused on Software Development. Similar to all the freshly graduates, I started building my resumes and drafting cover letters, with the hope of finding a company in a short time to kickstart my career as a junior software developer."

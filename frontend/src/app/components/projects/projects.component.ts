@@ -5,7 +5,6 @@ import { CommonModule } from '@angular/common';
 import { MatDialog } from '@angular/material/dialog';
 import { ProjectModalComponent } from './project-modal/project-modal.component';
 
-
 @Component({
   selector: 'app-projects',
   standalone: true,
