@@ -3,21 +3,31 @@
   src: url('../../../../assets/fonts/Orbitron/static/Orbitron-Bold.ttf') format('truetype');
 }
 
-ul {
+.navbar {
+  background-color: #8AAAE5;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.nav-left .logo img{
+  width: 60px;
+  height: 60px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.nav-right ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  
   overflow: hidden;
-  background-color: #8AAAE5;
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 0 20% 0 20%;
-}
-
-.navbar ul li:first-of-type {
-  margin-left: auto;
 }
 
 li {
@@ -36,9 +46,48 @@ li a {
   text-decoration: none;
 }
 
-ul .logo img{
-  width: 60px;
-  height: 60px;
-  border-radius: 10%;
+.dropdown-toggle svg {
+  height: 40px;
+  width: 40px;
 }
 
+.dropdown-toggle {
+  display: none;
+}
+
+/* Extra Small Devices (portrait phones) */
+@media (max-width: 599.8px) {
+  /* CSS rules for XS screens */
+}
+
+/* Small Devices (landscape phones) */
+@media (min-width: 600px) and (max-width: 767.98px) {
+  /* CSS rules for SM screens */
+  .navbar {
+    padding: 0 5vw 0 5vw;
+  }
+}
+
+/* Medium Devices (tablets) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* CSS rules for MD screens */
+  .navbar {
+    padding: 0 5vw 0 5vw;
+  }
+}
+
+/* Large Devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* CSS rules for LG screens */
+  .navbar {
+    padding: 0 20vw 0 20vw;
+  }
+}
+
+/* Extra Large Devices (large desktops) */
+@media (min-width: 1200px) {
+  /* CSS rules for XL screens */
+  .navbar {
+    padding: 0 20vw 0 20vw;
+  }
+}

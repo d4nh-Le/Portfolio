@@ -70,7 +70,7 @@
       "express",
       "awsec2"
     ],
-    "projectDescription": "An efficient web scraper application to collect ratings and reviews from various businesses page, convert them into JSON with the option of deliver them through APIs.",
+    "projectDescription": "An efficient web scraper application to collect ratings and reviews from various businesses pages, convert them into JSON with the option of deliver them through APIs.",
     "projectDetail": [
       {
         "paragraph": "Almost half a year ago, I finally graduated from Southern Alberta Institute of Technology (SAIT), after two years taking the diploma program focused on Software Development. Similar to all the freshly graduates, I started building my resumes and drafting cover letters, with the hope of finding a company in a short time to kickstart my career as a junior software developer."
