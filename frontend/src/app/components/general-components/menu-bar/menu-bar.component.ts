@@ -12,6 +12,6 @@ export class MenuBarComponent {
 
   toggleDropdown(): void {
     const navLinks = this.navLinks.nativeElement;
-    navLinks.style.display = navLinks.style.display === 'none' ? 'block' : 'none';
+    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
   }
 }

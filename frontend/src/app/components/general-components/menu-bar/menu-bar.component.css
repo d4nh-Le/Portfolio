@@ -18,13 +18,11 @@
   border-radius: 10px;
 }
 
-.nav-right ul {
+.navbar .nav-right ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  
-  overflow: hidden;
-  height: 80px;
+  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -57,37 +55,80 @@ li a {
 
 /* Extra Small Devices (portrait phones) */
 @media (max-width: 599.8px) {
-  /* CSS rules for XS screens */
+ 
+
+  .dropdown-toggle {
+    display: block;
+  }
+
+  .nav-right ul {
+    display: none;
+    flex-direction: column;
+  }
+
 }
 
 /* Small Devices (landscape phones) */
 @media (min-width: 600px) and (max-width: 767.98px) {
-  /* CSS rules for SM screens */
+
   .navbar {
     padding: 0 5vw 0 5vw;
+  }
+
+  .dropdown-toggle {
+    display: block;
+  }
+
+  .nav-right ul {
+    display: none;
+    flex-direction: column;
   }
 }
 
 /* Medium Devices (tablets) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  /* CSS rules for MD screens */
+
   .navbar {
     padding: 0 5vw 0 5vw;
+  }
+
+  .dropdown-toggle {
+    display: none;
+  }
+
+  .nav-right ul {
+    display: block;
   }
 }
 
 /* Large Devices (desktops) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  /* CSS rules for LG screens */
+
   .navbar {
     padding: 0 20vw 0 20vw;
+  }
+
+  .dropdown-toggle {
+    display: none;
+  }
+
+  .nav-right ul {
+    display: block;
   }
 }
 
 /* Extra Large Devices (large desktops) */
 @media (min-width: 1200px) {
-  /* CSS rules for XL screens */
+
   .navbar {
     padding: 0 20vw 0 20vw;
+  }
+
+  .dropdown-toggle {
+    display: none;
+  }
+
+  .nav-right ul {
+    display: block;
   }
 }
