@@ -1,4 +1,5 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
+import { HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-menu-bar',
@@ -13,5 +14,20 @@ export class MenuBarComponent {
   toggleDropdown(): void {
     const navLinks = this.navLinks.nativeElement;
     navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+    if (navLinks.style.display === 'flex') {
+      navLinks.classList.add('show');
+    } else {
+      navLinks.classList.remove('show');
+    }
   }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any): void {
+  const navLinks = this.navLinks.nativeElement;
+  if (event.target.innerWidth >= 768) {
+    navLinks.style.display = 'flex';
+  } else {
+    navLinks.style.display = 'none';
+  }
+}
 }
