@@ -126,9 +126,9 @@ li a {
   }
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) and (max-width: 991.98px){
   .navbar {
-    padding: 0 20vw 0 20vw;
+    padding: 0 5vw 0 5vw;
   }
 
   .navbar .dropdown-toggle {
@@ -140,7 +140,7 @@ li a {
   }
 }
 
-/* @media (min-width: 992px) and (max-width: 1199.98px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
 
   .navbar {
     padding: 0 20vw 0 20vw;
@@ -168,4 +168,4 @@ li a {
   .nav-links {
     display: flex;
   }
-} */
+}
