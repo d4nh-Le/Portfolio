@@ -44,7 +44,18 @@
 .navbar .nav-right .dropdown-toggle svg {
   height: 50px;
   width: 50px;
+  transition: opacity 0.1s ease-in-out;
 }
+
+.dropdown-toggle svg.hideSVG {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dropdown-toggle svg:not(.hideSVG) {
+  opacity: 1;
+}
+
 
 
 li {
@@ -97,18 +108,21 @@ li a {
 
   .navbar .nav-right .nav-links {
     display: flex;
+    visibility: hidden;
     flex-direction: column;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
     max-height: 0;
     overflow: hidden;
-    transform-origin: top;
-    transition: transform 0.2s ease-in-out, max-height 0s;
+    transition: max-height 0.2s ease-in-out, padding-top 0.2s ease-in-out, padding-bottom 0.2s ease-in-out, visibility 0s 0.2s;
   }
   
   .navbar .nav-right .nav-links.show {
-    max-height: 500px;
-    transition: transform 0.2s ease-in-out, max-height 0s;
+    visibility: visible;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-height: 500px; /* Adjust this value as needed */
+    transition: max-height 0.2s ease-in-out, padding-top 0.2s ease-in-out, padding-bottom 0.2s ease-in-out;
   }
 }
 

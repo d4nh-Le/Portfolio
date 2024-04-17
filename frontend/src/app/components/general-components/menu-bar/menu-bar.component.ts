@@ -1,23 +1,27 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { HostListener } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-menu-bar',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './menu-bar.component.html',
   styleUrl: './menu-bar.component.css'
 })
 export class MenuBarComponent {
   @ViewChild('navLinks', { static: false }) navLinks!: ElementRef;
+  dropdownOpen = false;
 
   toggleDropdown(): void {
     const navLinks = this.navLinks.nativeElement;
-    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-    if (navLinks.style.display === 'flex') {
+    navLinks.style.visibility = navLinks.style.visibility === 'visible' ? 'hidden' : 'visible';
+    if (navLinks.style.visibility === 'visible') {
       navLinks.classList.add('show');
+      this.dropdownOpen = true;
     } else {
       navLinks.classList.remove('show');
+      this.dropdownOpen = false;
     }
   }
 
@@ -25,9 +29,9 @@ export class MenuBarComponent {
   onResize(event: any): void {
   const navLinks = this.navLinks.nativeElement;
   if (event.target.innerWidth >= 768) {
-    navLinks.style.display = 'flex';
+    navLinks.style.visibility = 'visible';
   } else {
-    navLinks.style.display = 'none';
+    navLinks.style.visibility = 'hidden';
   }
 }
 }
