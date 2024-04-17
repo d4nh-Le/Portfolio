@@ -48,7 +48,7 @@
 
 
 li {
-  float:right;
+  float:left;
   font-family: 'Orbitron';
   font-size: 22px;
   margin-right: 10px;
@@ -102,14 +102,12 @@ li a {
     padding-bottom: 10px;
     max-height: 0;
     overflow: hidden;
-    transform: scaleY(0);
     transform-origin: top;
     transition: transform 0.2s ease-in-out, max-height 0s;
   }
   
   .navbar .nav-right .nav-links.show {
-    max-height: 500px; /* Adjust this value as needed */
-    transform: scaleY(1);
+    max-height: 500px;
     transition: transform 0.2s ease-in-out, max-height 0s;
   }
 }
