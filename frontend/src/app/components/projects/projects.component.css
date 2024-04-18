@@ -10,7 +10,6 @@
 }
 
 .project-thumbnail {
-  padding: 0 10% 0 20%;
   overflow: hidden;
   border-top: 1px solid rgb(255, 255, 255);
   display: flex;
@@ -28,6 +27,7 @@
 .all-projects .project-left {
   width: calc((100% - 30%) / 2);
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .project-publish {
@@ -108,8 +108,8 @@
 }
 
 .project-image img {
-  height: 300px;
-  width:  600px;
+  height: 30vh;
+  width:  30vw;
   border-radius: 10px;
   transition: filter 0.3s ease;
 }
@@ -118,14 +118,49 @@
   filter: blur(5px);
 }
 
+/* Small Devices (phones) */
+@media (max-width: 767.98px) {
+  .project-thumbnail {
+    padding: 3vh 3vw 3vh 3vw;
+    display: flex;
+    flex-direction: column;
+  }
 
-@media (max-width: 768px) {
-    .project-thumbnail {
-        width: 100%;
-        float: none;
-        margin-right: 0;
-    }
+  .all-projects .project-left {
+    width: 100%;
+    padding: 0;
+  }
+
+  .project-image img {
+    height: 30vh;
+    width:  90vw;
+  }
+
+  .project-right {
+    padding: 4vh 2vw 1vh 2vw
+  }
+
+    
 }
 
+@media (min-width: 768px) and (max-width: 991.98px){
+  
+  .project-thumbnail {
+    padding: 0 5vw 0 5vw;
+  }
+  
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .project-thumbnail {
+    padding: 0 10vw 0 20vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-thumbnail {
+    padding: 0 10vw 0 20vw;
+  }
+}
 
 
