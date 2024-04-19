@@ -1,4 +1,4 @@
-<div *ngIf="(results)" class="leetcode-container">
+<div class="leetcode-container">
 
   <div class="leetcode-left">
     <div class="welcome-icon">
@@ -13,7 +13,7 @@
 
 
     <div class="leetcode-right">
-      <div class="result-inner">
+      <div class="result-inner" *ngIf="(results)">
         <div class="result-leetcode-results">
           <!-- LOADING STATE -->
       <div class="loading-state">
