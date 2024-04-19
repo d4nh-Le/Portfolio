@@ -23,8 +23,8 @@
     width: 1200px; 
     height: 800px; 
     overflow: scroll;
-    background-color: #3f5a90;
-    border: 3px solid #ffffff;
+    background-color: #ffffff;
+    border: 3px solid #3f5a90;
     scrollbar-width: none; 
     -ms-overflow-style: none; 
 }
@@ -39,7 +39,7 @@
 
 .modal-description {
     padding: 15px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .paragraph-separator {
@@ -49,12 +49,12 @@
 }
 
 .modal-detail .see-more-button {
-  color: white;
+  color: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: inherit;
-  outline: 3px #ffffff solid;
+  outline: 3px #000000 solid;
   padding: 10px 20px 10px 20px;
   border-radius: 100px;
   border: none;
