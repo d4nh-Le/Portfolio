@@ -14,7 +14,6 @@
 }
 
 .skills-box {
-    padding: 0 10% 0 20%;
     overflow: hidden;
     background-color: #8AAAE5;
     border-top: 1px solid rgb(255, 255, 255);
@@ -22,7 +21,6 @@
 }
 
 .skills-box-right {
-    /* width: calc((100% - 30%) / 2); */
     padding: 15px 10px 0 120px;
     padding-top: 40px;
     padding-bottom: 45px;
@@ -84,6 +82,11 @@
     display: none;
 }
 
+.card .icons svg {
+  max-height: 100%;
+  max-width: 100%;
+}
+
 
 /* ##############################EXTERNAL################### */
 
@@ -91,18 +94,6 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-  }
-  
-  .cards .red {
-    background-color: #f43f5d00;
-  }
-  
-  .cards .blue {
-    background-color: #3b83f600;
-  }
-  
-  .cards .green {
-    background-color: #0c532600;
   }
   
   .cards .card {
@@ -147,3 +138,58 @@
   .card:hover .icon-name {
     display: block;
   }
+
+
+  /* Small Devices (phones) */
+@media (max-width: 767.98px) {
+  .skills-box {
+    padding: 3vh 3vw 3vh 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skills-box-right {
+    padding: 3vh 0 3vh 0;
+  }
+
+  .skills-box-left {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .cards .card {
+    height: 20vh;
+    width: 90vw;
+  }
+
+  .cards .card:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+  
+  .skills-box {
+    padding: 2vw 5vw 2vw 5vw;
+  }
+
+  .skills-box-right {
+    padding: 3vh 3vw 3vh 3vw;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .skills-box {
+    padding: 2vw 5vw 2vw 10vw;
+  }
+
+  
+}
+
+@media (min-width: 1200px) {
+  .skills-box {
+    padding: 2vw 20vw 2vw 20vw;
+  }
+}
