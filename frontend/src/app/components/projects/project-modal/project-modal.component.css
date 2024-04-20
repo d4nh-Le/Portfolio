@@ -18,15 +18,14 @@
 }
 
 .card {
-    padding: 20px;
+    padding: 30px 20px 20px 20px;
     border-radius: 5px;
-    width: 1200px; 
-    height: 800px; 
     overflow: scroll;
     background-color: #ffffff;
-    border: 3px solid #3f5a90;
+    border: 2px solid #000000;
     scrollbar-width: none; 
     -ms-overflow-style: none; 
+    position: relative; 
 }
 
 .card::-webkit-scrollbar {
@@ -65,13 +64,49 @@
   margin-top: 30px;
 }
 
-.see-more-button:hover {
+.modal-detail .close-button {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    outline: 3px #000000 solid;
+    padding: 10px 20px 10px 20px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+    font-weight: 700;
+    font-size: 1em;
+    margin-top: 50px;
+  }
+
+.see-more-button:hover , .close-button:hover {
 filter: brightness(1.2);
 }
 
 .modal-sec1 {
+    padding: 20px 5% 20px 5%;;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+.modal-sec1-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.modal-sec1-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+svg {
+    fill:#000000;
 }
 
 .modal-author, .modal-date {
@@ -99,13 +134,10 @@ filter: brightness(1.2);
 .modal-technologies {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-end; ; 
-    padding-left: 45%;
 }
 
 .modal-technology {
-    margin-left: 15px;
-    margin-right: 15px;
+    padding: 5px 10px 5px 0;
 }
 
 .modal-title {
@@ -123,8 +155,6 @@ filter: brightness(1.2);
 }
 
 .header-thumbnail img {
-    height: 500px;
-    width: 600px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -138,8 +168,6 @@ filter: brightness(1.2);
 }
 
 .modal-detail img {
-    width: 700px;
-    height: 400px;
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -171,12 +199,11 @@ filter: brightness(1.2);
     color: #cf7770;
 }
 
-.modal-close {
-    margin-top: 20px;
-    text-align: center;
-    position: absolute; 
-    top: 10px;
-    right: 14px;
+.card .modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 10px 0 0;
 }
 
 .modal-close button:hover {
@@ -184,6 +211,15 @@ filter: brightness(1.2);
 }
 
 .modal-close button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f44336;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal-close-bottom button {
     padding: 10px 20px;
     border: none;
     background-color: #f44336;
@@ -200,6 +236,12 @@ filter: brightness(1.2);
     transition: background-color 0.3s ease-in-out;
 }
 
+.modal-project-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 @keyframes modalFadeIn {
     from {
         opacity: 0;
@@ -211,18 +253,87 @@ filter: brightness(1.2);
     }
 }
 
-@media (max-width: 768px) {
-    .modal-content {
-        width: 90%; 
-        height: 80%; 
-        max-width: 90%; 
-        max-height: 80%; 
+/* Small Devices (phones) */
+@media (max-width: 767.98px) {
+    .card {
+        width: 90vw; 
+        height: 90vh; 
     }
-}
 
-@media (max-width: 768px) {
-    .modal-content {
-        max-width: 90%;
-        max-height: 80%;
+    .modal-sec1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
     }
+
+    .header-thumbnail img {
+        height: calc(60vw / 1.2);
+        width: 60vw;
+    }
+
+    .modal-detail img {
+        height: 30vh;
+        width: 80vw;
+    }
+
+    .modal-sec2 {
+        padding: 20px 0 20px 0;
+    }
+    
+  }
+  
+@media (min-width: 768px) and (max-width: 991.98px){
+
+    .card {
+        width: 80vw; 
+        height: 90vh; 
+    }
+
+    .header-thumbnail img {
+        height: calc(50vw / 1.2);
+        width: 50vw;
+    }
+
+    .modal-detail img {
+        height: 30vh;
+        width: 50vw;
+    }
+    
+  }
+  
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .card {
+        width: 70vw; 
+        height: 90vh; 
+    }
+
+    .header-thumbnail img {
+        height: calc(40vw / 1.2);
+        width: 40vw;
+    }
+
+    .modal-detail img {
+        height: 30vh;
+        width: 40vw;
+    }
+
+
+  }
+  
+@media (min-width:1200px) {
+    .card {
+        width: 60vw; 
+        height: 90vh; 
+    }
+    
+    .header-thumbnail img {
+        height: calc(30vw / 1.2);
+        width: 30vw;
+    }
+
+    .modal-detail img {
+        height: 35vh;
+        width: 30vw;
+    }
+    
 }

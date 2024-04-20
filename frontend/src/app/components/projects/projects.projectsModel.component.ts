@@ -6,6 +6,7 @@ export interface Project {
   description: string;
   detail: Array<{ text: string, image: string | null , line: boolean}>;
   date: string;
-  url: string;
+  urlGithub: string;
+  urlDemo: string;
   status: string;
   }

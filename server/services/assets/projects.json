@@ -57,7 +57,8 @@
       }
     ],
     "projectDate": "2024",
-    "projectLink": "https://github.com/d4nh-Le/portfolio",
+    "projectLinkGithub": "https://github.com/d4nh-Le/portfolio",
+    "projectLinkWebsite": "https://portfolio.danh-le.com/home",
     "projectStatus": "tobepublished"
   },
   {
@@ -68,7 +69,7 @@
       "angular",
       "nodejs",
       "express",
-      "awsec2"
+      "ec2"
     ],
     "projectDescription": "An efficient web scraper application to collect ratings and reviews from various businesses pages, convert them into JSON with the option of delivering them through APIs.",
     "projectDetail": [
@@ -118,7 +119,8 @@
       }
     ],
     "projectDate": "2024",
-    "projectLink": "https://github.com/d4nh-Le/portfolio",
+    "projectLinkGithub": "https://github.com/d4nh-Le/portfolio",
+    "projectLinkWebsite": "https://portfolio.danh-le.com/home",
     "projectStatus": "tobepublished"
   },
   {
@@ -128,8 +130,8 @@
     "technologies" : [
       "angular",
       "nodejs",
-      "express",
-      "awsec2"
+      "expressjs",
+      "ec2"
     ],
     "projectDescription": "A personal portfolio website used to showcase my skills and projects experience. The website includes information about myself, my skills, past projects I had worked on, as well as the progress of projects I am currently working on.",
     "projectDetail": [
@@ -179,7 +181,8 @@
       }
     ],
     "projectDate": "2024",
-    "projectLink": "https://github.com/d4nh-Le/portfolio",
+    "projectLinkGithub": "https://github.com/d4nh-Le/portfolio",
+    "projectLinkWebsite": "https://portfolio.danh-le.com/home",
     "projectStatus": "complete"
   }
 ]

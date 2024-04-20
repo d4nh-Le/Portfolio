@@ -41,7 +41,8 @@ export class ProjectsComponent {
             })),
             date: project.projectDate,
             images: project.projectImages,
-            url: project.projectLink,
+            urlGithub: project.projectLinkGithub,
+            urlDemo: project.projectLinkWebsite,
             status: project.projectStatus
           }));
         },
