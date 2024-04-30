@@ -25,7 +25,8 @@ export class LeetcodeComponent implements OnInit {
   }
 
   getData() {
-    this.http.get<any>('http://localhost:3000/leetcode')
+    // dev mode: http://localhost:3000/leetcode
+    this.http.get<any>('https://portfolio.danh-le.com/leetcode')
     .pipe(
       retryWhen(errors => errors.pipe(
         delay(3000), 

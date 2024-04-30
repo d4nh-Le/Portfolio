@@ -25,7 +25,8 @@ export class ProjectsComponent {
   }
 
   getData() {
-    this.http.get<any>('http://localhost:3000/projects')
+    // dev mode: http://localhost:3000/projects
+    this.http.get<any>('https://portfolio.danh-le.com/projects')
       .subscribe(
         (data: Project[]) => {
           this.results = data.map((project: any) => ({
@@ -34,11 +35,11 @@ export class ProjectsComponent {
             thumbnail: project.projectThumbnail,
             technologies: project.technologies,
             description: project.projectDescription,
-            detail: project.projectDetail.map((detail: any) => ({
+            detail: Array.isArray(project.projectDetail) ? project.projectDetail.map((detail: any) => ({
               text: detail.paragraph,
               image: detail.image,
               line: detail.line
-            })),
+            })) : [],
             date: project.projectDate,
             images: project.projectImages,
             urlGithub: project.projectLinkGithub,

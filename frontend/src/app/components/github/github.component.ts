@@ -26,7 +26,8 @@ export class GithubComponent {
     }
 
     fetchDataFromServer() {
-    this.http.get<any>('http://localhost:3000/github')
+    // dev mode: http://localhost:3000/github
+    this.http.get<any>('https://portfolio.danh-le.com/github')
       .subscribe(
       (data: any[]) => {
         this.results = data.map(item => ({
