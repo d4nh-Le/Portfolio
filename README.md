@@ -200,3 +200,9 @@ Some features I would like to add in the futures:
 - [X] Responsive designs for mobile devices.
 - [ ] Blog features where I can post my not just my projects, but also stories and what I have learnt.
 - [ ] Feeds retrieved from media such as Linkedin.
+
+## Contact
+If you would like to contact me (__Danh Le - Junior Software Developer__), please send me an email me at danhle002@gmail.com.
+
+
+@2024
