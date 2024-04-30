@@ -198,7 +198,7 @@ After a lot of attempts and researchs, I have successfully hosted the project on
 ## Future Plans
 Some features I would like to add in the futures:
 - [X] Responsive designs for mobile devices.
-- [ ] Blog features where I can post my not just my projects, but also stories and what I have learnt.
+- [ ] Blog features where I can post not just my projects, but also stories or experience and what I have learnt from them.
 - [ ] Feeds retrieved from media such as Linkedin.
 
 ## Contact
