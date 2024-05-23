@@ -198,7 +198,7 @@ After a lot of attempts and researchs, I have successfully hosted the project on
 ## Future Plans
 Some features I would like to add in the future:
 - [X] Responsive designs for mobile devices.
-- [X] Monitor features for my website visits and traffics (See [Webmailer - An analytic tool for web developer](https://portfolio.danh-le.com/home) - by me).
+- [X] Monitor features for my website visits and traffics (See [Webmailer - An analytic tool for web developer](https://github.com/d4nh-Le/webmailer) - by me).
 - [ ] Blog features where I can post not just my projects, but also stories or experience and what I have learnt from them.
 - [ ] Feeds retrieved from media such as Linkedin.
 
