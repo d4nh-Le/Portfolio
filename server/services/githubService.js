@@ -129,7 +129,7 @@ exports.githubGetInfo = async (req, res) => {
       const jsonData = await fetchGitHubData();
       const filteredData = await filterCommits(jsonData);
 
-      console.log('GitHub User Data:', filteredData);
+      // console.log('GitHub User Data:', filteredData);
       res.json(filteredData);
   } catch (error) {
       res.status(500).json({ error: 'Error fetching GitHub data', details: error.message });

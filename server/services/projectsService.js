@@ -23,7 +23,7 @@ async function getProjectDetails() {
 exports.projectsGetDetails = async (req, res) => { 
     try {
         const jsonData = await getProjectDetails();
-        console.log('Project JSON:', jsonData);
+        // console.log('Project JSON:', jsonData);
         res.json(jsonData);
     } catch (error) {
         res.status(500).json({ error: 'Error fetching Leetcode data', details: error.message });

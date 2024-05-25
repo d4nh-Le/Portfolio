@@ -1,127 +1,55 @@
 [
   {
-    "projectTitle": "LeCong's Welding Machines and Services",
+    "projectTitle": "Webmailer",
     "projectAuthors": "Danh Le",
-    "projectThumbnail": "../../../assets/projectImages/congwelding/congweldingB.jpg",
+    "projectThumbnail": "../../../assets/projectImages/webmailer/webmailer.jpg",
     "technologies" : [
-      "angular",
+      "react",
       "nodejs",
-      "express",
-      "awsec2"
+      "ec2",
+      "postgres"
     ],
-    "projectDescription": "Landing store page for LeCong, a company specialized in welding machines, tools and equipments. The website showcase the business products, equipments and services.",
+    "projectDescription": "An analytic tool for web developer to get notified about their website's performance such as visitors and incoming traffics. The reports are sent automatically and conveniently through registered email - no complicated services or download app needed.",
     "projectDetail": [
       {
-        "paragraph": "Almost half a year ago, I finally graduated from Southern Alberta Institute of Technology (SAIT), after two years taking the diploma program focused on Software Development. Similar to all the freshly graduates, I started building my resumes and drafting cover letters, with the hope of finding a company in a short time to kickstart my career as a junior software developer."
+        "paragraph": "In the beginning of 2024, after freshly graduated from college, I had an idea of creating a portfolio website where I can showcase the projects I have had partaken in, my experience as well as what technical skills I possess. Thus, I sat down, listed out the tasks I would need to do, what I would need to learn and started to design my portfolio website and its components. After one and a half months of both working and developing this idea at the same time, I finished this and finally deployed this website on the internet."
       },
       {
-        "paragraph": "I started going through sections that one could normally find in a resume - Introduction, Education, Skills. However, when I stumbled upon Experience, I stopped for a second. As a fresh graduate from college, I have almost no real industry experience, compared to other software developers who graduated earlier before me, those who have had real software jobs or even those self-taught. They all have something to show for, to introduce themselves as a software developer."
+        "paragraph": "After having the website run for a while, I noticed on my AWS EC2 Instance dashboard, a cloud server provider that I decided to host my application on, there are visitors who come to my website. When I decided that I would create this portfolio site, I had very little expectation that there would be visitors to my website, largely because it is just a simple website where I talk about myself, it is not like this is any popular page or website with fancy functionalities. However, I was curious nonetheless. I started to wonder who these visitors were and where they came from. That was the moment an idea sparked inside me:"
       },
       {
-        "paragraph": "At the time, my closest to an experience was the final project before graduating from college. Then, a thought came to my mind: “Now, for example, even if I really do have an adequate amount of experience, how could anybody know what I do?” That thought was the first spark to give me an idea of building a portfolio website, to stand out and to showcase my work and experience.",
-        "line": true,
-        "image": "../../../assets/projectImages/portfolio/para1.jpg"
-      },
-      {
-        "paragraph": "That night, I sat down and started to brainstorm ideas for a portfolio website. What would be included, what functionalities I want it to have, all in all a website that would showcase my projects, my skills, and most importantly, showcase who I am as a person. I did not want a regular website that only had my information and some of the projects I have worked on. Apart from those elements, I wanted my website to record my activities of what I did, what projects I was currently working on and what stories were behind them (like a blog)."
-      },
-      {
-        "paragraph": "After a couple of weeks, while working and building the website at the same time, I have finally finished and deployed the first prototype website. The website includes many ideas that I have originally thought about. Even though I was proud of it, because it was one of many first projects I worked on, it lacked many aspects of a normal website one would use. For example, the designs were uneven, the APIs were insecure, and the website was not even mobile friendly.", 
-        "line": true,
-        "image": "../../../assets/projectImages/portfolio/para2.jpg"
-      },
-      {
-        "paragraph": "I gained a little more confidence and started to be eager to apply for some jobs. I meticulously drafted my resumes and cover letters and started to find companies to apply to. However, after a few attempts, all of my applications were never responded back. In the period of 2023 - 2024, tech jobs experienced a lot of lay-offs, due to economies and oversaturation of software developers and software engineers. Even those who had lots of experience within the fields also struggled."
-      },
-      {
-        "paragraph": "While looking at the picture of the average situation, I was aware of the difficulty of the situation. However, I asked myself if there was something I could do to improve my chances. After analyzing a little bit, I discovered that while there were visitors who visited my prototype portfolio websites, I did not get any calls back. It was a wake up alarm for me to investigate.",
+        "paragraph": "- If I am having this problem, maybe there are others who are experiencing the same, maybe I can create a solution to fix this.",
         "line": true
       },
       {
-        "paragraph": "At the time of writing this post, looking back, even though I was proud of my creation. It lacked a major aspect of any websites, applications or product: User Interface (UI) and User Experience (UX). My prototype website, while having many flashy and complicated designs and animations, a visitor who comes to my website would not feel “friendly”. When a user visits a page, such as a news website or a shopping page of a brand, one often would not be consciously aware of the designs of the website. They would only care about the contents and what the website was about. All of the aspects of navigations, elements and designs would be perceived subconsciously. Therefore, I found my first lessons:"
+        "paragraph": "I sat down and started to brainstorm. I want a tool that can recognize there are visitors coming into my website. This tool must also be able to analyze the information of the requests such as the request’s time, location, where this request came from and how they find out about my website. More importantly, how it can automatically trigger everytime there is a visit to the website. And more importantly, how am I going to receive the notification about my website visit.", 
+        "image": "../../../assets/projectImages/webmailer/webmailer1.jpg"
       },
       {
-        "paragraph": "- The UX/UI has not done a good job if the regular users notice the design of a product."
-      },
-      {
-        "paragraph": "After that simple realization, I started to dive into the field of UX/UI. While not fully focused and specialized UX/UI like many graduates, I applied a few principles that I think would improve my website. I adjusted the page for simplicity and user-friendliness. At the same time, I also upgraded some aspects of the website such as security and performance. A new version of my portfolio website was deployed.",
-        "line": true,
-        "image": "../../../assets/projectImages/portfolio/para3.jpg"
-      },
-      {
-        "paragraph": "While there are not any studies or reports that prove that in this way, my portfolio would be more simple or better, or would attract more visitors or potential employers, I believe this newer version works better. The evidence is that when I showed one of my friends about my portfolio website, one of their responses was: “Why is your website which shows to your employers so simple, even I can do it”."
-      },
-      {
-        "paragraph": "At that moment, a subtle feeling of happiness came to me. I have designed, created and deployed an idea I had. After many attempts, I made it better step-by-step along the way and learned a few valuable lessons. That honest response from my friend let me know I was in the right direction.",
-        "image": "../../../assets/projectImages/portfolio/para4.jpg"
-      }
-    ],
-    "projectDate": "2024",
-    "projectLinkGithub": "https://github.com/d4nh-Le/portfolio",
-    "projectLinkWebsite": "https://portfolio.danh-le.com/home",
-    "projectStatus": "tobepublished"
-  },
-  {
-    "projectTitle": "Reviews.json",
-    "projectAuthors": "Danh Le",
-    "projectThumbnail": "../../../assets/projectImages/reviewjson/reviewjson.jpg",
-    "technologies" : [
-      "angular",
-      "nodejs",
-      "express",
-      "ec2"
-    ],
-    "projectDescription": "An efficient web scraper application to collect ratings and reviews from various businesses pages, convert them into JSON with the option of delivering them through APIs.",
-    "projectDetail": [
-      {
-        "paragraph": "Almost half a year ago, I finally graduated from Southern Alberta Institute of Technology (SAIT), after two years taking the diploma program focused on Software Development. Similar to all the freshly graduates, I started building my resumes and drafting cover letters, with the hope of finding a company in a short time to kickstart my career as a junior software developer."
-      },
-      {
-        "paragraph": "I started going through sections that one could normally find in a resume - Introduction, Education, Skills. However, when I stumbled upon Experience, I stopped for a second. As a fresh graduate from college, I have almost no real industry experience, compared to other software developers who graduated earlier before me, those who have had real software jobs or even those self-taught. They all have something to show for, to introduce themselves as a software developer."
-      },
-      {
-        "paragraph": "At the time, my closest to an experience was the final project before graduating from college. Then, a thought came to my mind: “Now, for example, even if I really do have an adequate amount of experience, how could anybody know what I do?” That thought was the first spark to give me an idea of building a portfolio website, to stand out and to showcase my work and experience.",
-        "line": true,
-        "image": "../../../assets/projectImages/portfolio/para1.jpg"
-      },
-      {
-        "paragraph": "That night, I sat down and started to brainstorm ideas for a portfolio website. What would be included, what functionalities I want it to have, all in all a website that would showcase my projects, my skills, and most importantly, showcase who I am as a person. I did not want a regular website that only had my information and some of the projects I have worked on. Apart from those elements, I wanted my website to record my activities of what I did, what projects I was currently working on and what stories were behind them (like a blog)."
-      },
-      {
-        "paragraph": "After a couple of weeks, while working and building the website at the same time, I have finally finished and deployed the first prototype website. The website includes many ideas that I have originally thought about. Even though I was proud of it, because it was one of many first projects I worked on, it lacked many aspects of a normal website one would use. For example, the designs were uneven, the APIs were insecure, and the website was not even mobile friendly.", 
-        "line": true,
-        "image": "../../../assets/projectImages/portfolio/para2.jpg"
-      },
-      {
-        "paragraph": "I gained a little more confidence and started to be eager to apply for some jobs. I meticulously drafted my resumes and cover letters and started to find companies to apply to. However, after a few attempts, all of my applications were never responded back. In the period of 2023 - 2024, tech jobs experienced a lot of lay-offs, due to economies and oversaturation of software developers and software engineers. Even those who had lots of experience within the fields also struggled."
-      },
-      {
-        "paragraph": "While looking at the picture of the average situation, I was aware of the difficulty of the situation. However, I asked myself if there was something I could do to improve my chances. After analyzing a little bit, I discovered that while there were visitors who visited my prototype portfolio websites, I did not get any calls back. It was a wake up alarm for me to investigate.",
+        "paragraph": "Many ideas came to me. I could make a mobile application and have the application send notifications to let me know when there is a visitor on my website. Or I could design it so that everytime there is a visitor on my website, an automatic message will be sent to my phone, to notify me of the visit. However, after a few projects, one of the few things I have learnt is that a good product should be simple, intuitive and easy to use for the users. After brainstorming for a while, I came up with this: “Everyone has an email, and it is easily accessible from their phone also. I should make an application to notify a user through their email when their website has a visitor”.",
+        "image": "../../../assets/projectImages/webmailer/webmailer2.jpg",
         "line": true
       },
       {
-        "paragraph": "At the time of writing this post, looking back, even though I was proud of my creation. It lacked a major aspect of any websites, applications or product: User Interface (UI) and User Experience (UX). My prototype website, while having many flashy and complicated designs and animations, a visitor who comes to my website would not feel “friendly”. When a user visits a page, such as a news website or a shopping page of a brand, one often would not be consciously aware of the designs of the website. They would only care about the contents and what the website was about. All of the aspects of navigations, elements and designs would be perceived subconsciously. Therefore, I found my first lessons:"
+        "paragraph": "In system design, there is a crucial concept, the concept of Stakeholders. Stakeholders refers to the individuals or even a group of people that will affect or be affected by the process of developing an application. Stakeholders can be the customers who are using the application, the developers who create and maintain the applications, or the investors who put the fund in for the development of the application."
       },
       {
-        "paragraph": "- The UX/UI has not done a good job if the regular users notice the design of a product."
+        "paragraph": "The question of simplicity can be answered if I can find the answer for the question, who - stakeholders, are using my application."
       },
       {
-        "paragraph": "After that simple realization, I started to dive into the field of UX/UI. While not fully focused and specialized UX/UI like many graduates, I applied a few principles that I think would improve my website. I adjusted the page for simplicity and user-friendliness. At the same time, I also upgraded some aspects of the website such as security and performance. A new version of my portfolio website was deployed.",
-        "line": true,
-        "image": "../../../assets/projectImages/portfolio/para3.jpg"
+        "paragraph": "I developed this tool with the intention of letting me know when there are visitors coming into my website. Therefore, I concluded that other developers would be one who are using this tool, to put into their web application."
       },
       {
-        "paragraph": "While there are not any studies or reports that prove that in this way, my portfolio would be more simple or better, or would attract more visitors or potential employers, I believe this newer version works better. The evidence is that when I showed one of my friends about my portfolio website, one of their responses was: “Why is your website which shows to your employers so simple, even I can do it”."
+        "paragraph": "With this in mind, I decided that Webmailer would need a register page where the developers can fill in necessary information. Once filled in, they only need to put a little script into their server, similar to a library, to send the data to my server to process. The heavy lifting such as sending automatic emails, analyzing the requests and queries, sanitization, etc.. will be handled by the Webmailer server. It is for the purpose of making the application as easy to use as possible."
       },
       {
-        "paragraph": "At that moment, a subtle feeling of happiness came to me. I have designed, created and deployed an idea I had. After many attempts, I made it better step-by-step along the way and learned a few valuable lessons. That honest response from my friend let me know I was in the right direction.",
-        "image": "../../../assets/projectImages/portfolio/para4.jpg"
+        "paragraph": "I sat down and spent 3 weeks developing the application non-stop. After a lot of coding, testing and bug fixing, I have created the tool as I envisioned it. This application will help me to manage and analyze my website performance efficiently, and hopefully, others as well."
       }
     ],
     "projectDate": "2024",
-    "projectLinkGithub": "https://github.com/d4nh-Le/portfolio",
-    "projectLinkWebsite": "https://portfolio.danh-le.com/home",
-    "projectStatus": "tobepublished"
+    "projectLinkGithub": "https://github.com/d4nh-Le/webmailer",
+    "projectLinkWebsite": "https://w3bmailer.site",
+    "projectStatus": "complete"
   },
   {
     "projectTitle": "Personal Portfolio",
@@ -184,5 +112,26 @@
     "projectLinkGithub": "https://github.com/d4nh-Le/portfolio",
     "projectLinkWebsite": "https://portfolio.danh-le.com/home",
     "projectStatus": "complete"
+  },
+  {
+    "projectTitle": "LeCong's Welding Machines and Services",
+    "projectAuthors": "Danh Le",
+    "projectThumbnail": "../../../assets/projectImages/congwelding/congweldingB.jpg",
+    "technologies" : [
+      "angular",
+      "nodejs",
+      "express",
+      "awsec2"
+    ],
+    "projectDescription": "Landing store page for LeCong, a company specialized in welding machines, tools and equipments. The website showcase the business products, equipments and services.",
+    "projectDetail": [
+      {
+        "paragraph": "Update soon."
+      }
+    ],
+    "projectDate": "2023",
+    "projectLinkGithub": "https://github.com/d4nh-Le/portfolio",
+    "projectLinkWebsite": "https://portfolio.danh-le.com/home",
+    "projectStatus": "tobepublished"
   }
 ]

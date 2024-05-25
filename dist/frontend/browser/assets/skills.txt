@@ -1,0 +1,3 @@
+Java, Javascript, Typescript, SQL, noSQL
+React, Angular, NodeJS 
+Amazon Web Services, MongoDB
